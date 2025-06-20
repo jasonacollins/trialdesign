@@ -14,6 +14,6 @@ Compare the outcome of people randomly assigned into the program with the outcom
 
 Meta-information
 ================
-exname: mimin-counterfactual
+exname: mimic-counterfactual
 extype: schoice
 exsolution: 001

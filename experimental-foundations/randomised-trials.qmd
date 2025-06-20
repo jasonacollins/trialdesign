@@ -2,7 +2,7 @@
 format:
   html:
     css: "../webex.css"
-    include-after-body: "../webex.js"
+    include-in-header: "../webex.js"
 ---
 
 # Randomised trials
@@ -13,5 +13,9 @@ The fundamental problem of causal inference: we can never observe the same peopl
 
 ```{r quiz, echo = FALSE, message = FALSE, results = "asis"}
 library("exams2forms")
-exams2forms("mimic-counterfactual.Rmd", browse = FALSE)
+exams2forms("mimic-counterfactual.Rmd")
+```
+
+```{r quiz2, echo = FALSE, message = FALSE, results = "asis"}
+exams2forms("test-quiz.Rmd")
 ```

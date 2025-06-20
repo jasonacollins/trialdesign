@@ -87,19 +87,43 @@
     margin-bottom: 1em;
 }   
   
+/* HIGHER SPECIFICITY FOR INCORRECT ANSWERS */
+div.webex-box .webex-incorrect,
+div.webex-box .webex-checkboxgroup > .webex-incorrect,
+div.webex-box .webex-solveme.webex-incorrect,
+div.webex-box .webex-radiogroup > .webex-incorrect,
 .webex-incorrect,
 .webex-checkboxgroup > .webex-incorrect,
 .webex-solveme.webex-incorrect,
 .webex-radiogroup > .webex-incorrect {
-    border: 2px solid var(--incorrect);
-    background-color: var(--incorrect_alpha);
+    border: 2px solid var(--incorrect) !important;
+    background-color: var(--incorrect_alpha) !important;
 }
+
+/* HIGHER SPECIFICITY FOR CORRECT ANSWERS WITH !important */
+div.webex-box .webex-correct,
+div.webex-box .webex-checkboxgroup > .webex-correct,
+div.webex-box .webex-solveme.webex-correct,
+div.webex-box .webex-radiogroup > .webex-correct,
 .webex-correct,  
 .webex-checkboxgroup > .webex-correct,
 .webex-solveme.webex-correct,
-.webex-radiogroup >.webex-correct {
-    border: 2px solid var(--correct);
-    background-color: var(--correct_alpha);
+.webex-radiogroup > .webex-correct {
+    border: 2px solid var(--correct) !important;
+    background-color: var(--correct_alpha) !important;
+}
+
+/* ADDITIONAL HIGH SPECIFICITY RULES FOR RADIO BUTTONS */
+.webex-radiogroup label.webex-correct,
+div.webex-box .webex-radiogroup label.webex-correct {
+    border: 2px solid var(--correct) !important;
+    background-color: var(--correct_alpha) !important;
+}
+
+.webex-radiogroup label.webex-incorrect,
+div.webex-box .webex-radiogroup label.webex-incorrect {
+    border: 2px solid var(--incorrect) !important;
+    background-color: var(--incorrect_alpha) !important;
 }
 
 .unchecked .webex-incorrect > span::after,
@@ -250,6 +274,3 @@ ul.webex-button-list > li:last-child > .webex-button {
 .unchecked .webex-checkboxgroup > label.webex-incorrect {
   background-color: transparent;
 }
-
-
-
