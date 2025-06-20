@@ -206,7 +206,7 @@ select_func = function(e) {
 radiogroups_func = function(e) {
   console.log("webex: check radiogroups");
 
-  var checked_button = document.querySelector("input[name=" + this.id + "]:checked");
+  var checked_button = document.querySelector("input[name='" + this.id.replace('webex-', '') + "']:checked");
   var cl = checked_button.parentElement.classList;
   var labels = checked_button.parentElement.parentElement.children;
 

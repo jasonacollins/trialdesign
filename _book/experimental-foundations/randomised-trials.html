@@ -277,7 +277,7 @@ select_func = function(e) {
 radiogroups_func = function(e) {
   console.log("webex: check radiogroups");
 
-  var checked_button = document.querySelector("input[name=" + this.id + "]:checked");
+  var checked_button = document.querySelector("input[name='" + this.id.replace('webex-', '') + "']:checked");
   var cl = checked_button.parentElement.classList;
   var labels = checked_button.parentElement.parentElement.children;
 
@@ -783,8 +783,8 @@ window.onload = function() {
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What is the best way to mimic the counterfactual?</p>
-<div id="webex-f3a1561588bd036ce44c3189f9f0cf01" class="webex-radiogroup" data-answer="PQNNARkHbA==">
-<label><input type="radio" autocomplete="off" name="f3a1561588bd036ce44c3189f9f0cf01"><span>Compare the outcome of people who took up the program with the outcome of people who did not take up the program</span></label><label><input type="radio" autocomplete="off" name="f3a1561588bd036ce44c3189f9f0cf01"><span>Compare the outcome of people before they take up the program with the outcome of people after they take up the program</span></label><label><input type="radio" autocomplete="off" name="f3a1561588bd036ce44c3189f9f0cf01"><span>Compare the outcome of people randomly assigned into the program with the outcome of people randomly out of the program</span></label>
+<div id="webex-78198f0e4c1d4a694168a51564f32850" class="webex-radiogroup" data-answer="bAgdCRRXbQ==">
+<label><input type="radio" autocomplete="off" name="78198f0e4c1d4a694168a51564f32850"><span>Compare the outcome of people who took up the program with the outcome of people who did not take up the program</span></label><label><input type="radio" autocomplete="off" name="78198f0e4c1d4a694168a51564f32850"><span>Compare the outcome of people before they take up the program with the outcome of people after they take up the program</span></label><label><input type="radio" autocomplete="off" name="78198f0e4c1d4a694168a51564f32850"><span>Compare the outcome of people randomly assigned into the program with the outcome of people randomly out of the program</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -794,8 +794,8 @@ window.onload = function() {
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of these is NOT a component of a READy workflow? (See here: https://andreashandel.github.io/MADAcourse/content/module-ready-workflow/ready-overview.html)</p>
-<div id="webex-185dc13051c1c8ca5936a668039b3bfb" class="webex-radiogroup" data-answer="aggZVE8AHwBo">
-<label><input type="radio" autocomplete="off" name="185dc13051c1c8ca5936a668039b3bfb"><span>Reproducible</span></label><label><input type="radio" autocomplete="off" name="185dc13051c1c8ca5936a668039b3bfb"><span>Efficient</span></label><label><input type="radio" autocomplete="off" name="185dc13051c1c8ca5936a668039b3bfb"><span>Analytical</span></label><label><input type="radio" autocomplete="off" name="185dc13051c1c8ca5936a668039b3bfb"><span>Documented</span></label>
+<div id="webex-113ebb2d2cfdcffa848780cc135646e0" class="webex-radiogroup" data-answer="agEfVU5THlRv">
+<label><input type="radio" autocomplete="off" name="113ebb2d2cfdcffa848780cc135646e0"><span>Reproducible</span></label><label><input type="radio" autocomplete="off" name="113ebb2d2cfdcffa848780cc135646e0"><span>Efficient</span></label><label><input type="radio" autocomplete="off" name="113ebb2d2cfdcffa848780cc135646e0"><span>Analytical</span></label><label><input type="radio" autocomplete="off" name="113ebb2d2cfdcffa848780cc135646e0"><span>Documented</span></label>
 </div>
 </div>
 <div class="webex-solution">
