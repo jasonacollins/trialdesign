@@ -1,0 +1,11 @@
+# Running a trial
+
+In this part, I will cover the steps to design and run a trial. I will largely going to consider trials for public policy or business applications rather than for academic purposes. Many of the principles hold across academic, business and policy settings (in fact, they are often the same, as a trial may involve both an academic and a business or policy question).
+
+Applied behavioural science projects are typically designed to change behaviour (or improve an outcome caused by a certain behaviour). The trial is one step of that project.
+
+By the end of this module, you will be able to answer the following questions:
+
+1. What are the steps in a randomised trial?
+2. How can you articulate the causal links between a program and the outcomes?
+3. How do you choose outcomes and indicators to measure the success of a trial?

@@ -1,0 +1,17 @@
+---
+format:
+  html:
+    css: "../webex.css"
+    include-after-body: "../webex.js"
+---
+
+# Randomised trials
+
+Our main focus in these notes will be on randomised trials done in the lab or field (e.g. schools, firms, health centres, community) to establish the causal impact of an intervention. The causal impact is the difference in outcomes caused by the intervention. It is the comparison of what happened with the program with what happened without the intervention.
+
+The fundamental problem of causal inference: we can never observe the same people at the same time both with and without the intervention. We never observe the counterfactual. So we have to mimic the counterfactual.
+
+```{r quiz, echo = FALSE, message = FALSE, results = "asis"}
+library("exams2forms")
+exams2forms("mimic-counterfactual.Rmd", browse = FALSE)
+```

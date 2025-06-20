@@ -1,0 +1,15 @@
+{
+  "hash": "6b4e1781a1c97a2d4cb8619cfc862a86",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nformat:\n  html:\n    css: \"../webex.css\"\n    include-after-body: \"../webex.js\"\n---\n\n# Randomised trials\n\nOur main focus in these notes will be on randomised trials done in the lab or field (e.g. schools, firms, health centres, community) to establish the causal impact of an intervention. The causal impact is the difference in outcomes caused by the intervention. It is the comparison of what happened with the program with what happened without the intervention.\n\nThe fundamental problem of causal inference: we can never observe the same people at the same time both with and without the intervention. We never observe the counterfactual. So we have to mimic the counterfactual.\n\n::: {.webex-question }\n::: {.webex-check .webex-box}\n\n\nWhat is the best way to mimic the counterfactual?\n\n\n<div class='webex-radiogroup' id='webex-d0a6bbdd8f8806efb31dd9ab1275cecb' data-answer='PwBNBk5TOQ=='><label><input type='radio' autocomplete='off' name='d0a6bbdd8f8806efb31dd9ab1275cecb'></input><span>Compare the outcome of people who took up the program with the outcome of people who did not take up the program</span></label><label><input type='radio' autocomplete='off' name='d0a6bbdd8f8806efb31dd9ab1275cecb'></input><span>Compare the outcome of people before they take up the program with the outcome of people after they take up the program</span></label><label><input type='radio' autocomplete='off' name='d0a6bbdd8f8806efb31dd9ab1275cecb'></input><span>Compare the outcome of people randomly assigned into the program with the outcome of people randomly out of the program</span></label></div>\n\n\n:::\n::: {.webex-solution}\n\nCompare the outcome of people randomly assigned into the program with the outcome of people randomly out of the program\n\n:::\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

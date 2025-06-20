@@ -1,0 +1,5 @@
+# Overview {.unnumbered}
+
+In these notes, I introduce the principles and method of experimental research. You will learn the theory and good practices to design experiments in the field and test hypotheses. We will review confounds which can appear in an experimental study and how to ensure that an experimental project delivers the right insights. We will also examine the generalisability of experiments and how we should review the existing experimental literature.
+
+Through the book, I will largely focus on trials for public policy or business applications, in the lab or field, rather than for academic purposes. Many of the principles hold across academic, business and policy settings (in fact, they are often the same as a trial may involve both an academic and a business or policy question), but focusing our attention to the applied behavioural science question will allow us to achieve more depth.

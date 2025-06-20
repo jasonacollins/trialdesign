@@ -1,0 +1,88 @@
+project:
+  type: book
+
+book:
+  title: "Course notes on trial design"
+  site-url: https://trialdesign.jasoncollins.blog
+  author: "Jason Collins"
+  date: "18 June 2025"
+  date-format: D MMMM YYYY
+  chapters:
+    - index.qmd
+    - part: experimental-foundations/experimental-foundations.md
+      chapters: 
+        - experimental-foundations/why-experiment.md
+        - experimental-foundations/the-experimental-approach-in-economics-and-psychology.md
+        - experimental-foundations/the-role-of-experiments.md
+        - experimental-foundations/randomised-trials.qmd
+        - experimental-foundations/lab-versus-field.md
+        - experimental-foundations/are-randomised-controlled-trials-ethical.md
+    - part: before-the-trial/before-the-trial.md
+      chapters:
+        - before-the-trial/organisational-buy-in.md
+    - trial-basics.qmd
+    - part: running-a-trial/running-a-trial.qmd
+      chapters:
+        - running-a-trial/level-of-outcome.qmd
+        - running-a-trial/alternative-trial-design-processes.md
+    - 4-error-control-effect-sizes-and-sample-arrangement.qmd
+    - part: interpreting-trial-results/interpreting-trial-results.md
+      chapters:
+        - interpreting-trial-results/navigating-the-literature.md
+        - interpreting-trial-results/the-replication-crisis.md
+        - interpreting-trial-results/replication-and-reproducibility.md
+        - interpreting-trial-results/publication-bias.md
+        - interpreting-trial-results/p-hacking-and-the-garden-of-forking-paths.md
+        - interpreting-trial-results/pre-analysis-plans-and-preregistration.md
+        - interpreting-trial-results/type-m-and-type-s-errors.md
+        - interpreting-trial-results/validity.md
+        - interpreting-trial-results/generalisability-effect-sizes.md
+        - interpreting-trial-results/generalisability-context.md
+        - interpreting-trial-results/heterogeneity.md
+    - references.qmd
+  navbar:
+    background: primary
+    search: true
+    right:
+      - text: "Blog"
+        href: https://www.jasoncollins.blog/
+      - text: "About"
+        href: https://www.jasoncollins.blog/about/
+  sidebar:
+    collapse-level: 1
+    style: "floating"
+    align: left
+  repo-url: https://github.com/jasonacollins/trialdesign
+  repo-actions: [issue]
+  page-footer: 
+    center:
+      - text: "Copyright: CC-BY"
+        href: https://creativecommons.org/licenses/by/4.0/
+  open-graph: true
+  twitter-card: true
+
+bibliography: references.bib
+csl: apa-no-ampersand.csl
+
+format:
+  html:
+    theme: cosmo
+    fontcolor: black
+    fontsize: 20px
+    css: styles.css
+    html-math-method: katex
+    link-external-newwindow: true
+    ink-external-filter: '^(?:http:|https:)\/\/trialdesign\.jasoncollins\.blog\/custom'
+    code-fold: true
+    fig-cap-location: top
+    toc-expand: 1
+    toc-title: "On this page"
+
+lightbox: auto
+
+execute:
+  freeze: auto
+  keep-md: false
+  fig-pos: 'H'
+
+editor: source

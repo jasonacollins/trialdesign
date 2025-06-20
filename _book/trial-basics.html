@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; Trial basics – Course notes on trial design</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./running-a-trial/running-a-trial.html" rel="next">
+<link href="./before-the-trial/organisational-buy-in.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-be3c5a4880e563bd7b769321a328d6c1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="8&nbsp; Trial basics – Course notes on trial design">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://trialdesign.jasoncollins.blog/img/TLA_Figure_3.jpg">
+<meta property="og:site_name" content="Course notes on trial design">
+<meta name="twitter:title" content="8&nbsp; Trial basics – Course notes on trial design">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://trialdesign.jasoncollins.blog/img/TLA_Figure_3.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Course notes on trial design</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jasoncollins.blog/"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jasoncollins.blog/about/"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/jasonacollins/trialdesign" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./trial-basics.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Trial basics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./experimental-foundations/experimental-foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Experimental foundations</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experimental-foundations/why-experiment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why experiment?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experimental-foundations/the-experimental-approach-in-economics-and-psychology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The experimental approach in economics and psychology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experimental-foundations/the-role-of-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The role of experiments</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experimental-foundations/randomised-trials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Randomised trials</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experimental-foundations/lab-versus-field.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Lab versus field</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./experimental-foundations/are-randomised-controlled-trials-ethical.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Are randomised controlled trials ethical?</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./before-the-trial/before-the-trial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Before the trial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./before-the-trial/organisational-buy-in.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Organisational buy-in</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./trial-basics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Trial basics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./running-a-trial/running-a-trial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Running a trial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./running-a-trial/level-of-outcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Level of outcome</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./running-a-trial/alternative-trial-design-processes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4-error-control-effect-sizes-and-sample-arrangement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Error control, effect sizes and sample arrangement</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./interpreting-trial-results/interpreting-trial-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interpreting trial results</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/navigating-the-literature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/the-replication-crisis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/replication-and-reproducibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/publication-bias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/p-hacking-and-the-garden-of-forking-paths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/pre-analysis-plans-and-preregistration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/type-m-and-type-s-errors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/generalisability-effect-sizes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/generalisability-context.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interpreting-trial-results/heterogeneity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#randomisation" id="toc-randomisation" class="nav-link active" data-scroll-target="#randomisation"><span class="header-section-number">8.1</span> Randomisation</a></li>
+  <li><a href="#developing-an-intervention-for-trial" id="toc-developing-an-intervention-for-trial" class="nav-link" data-scroll-target="#developing-an-intervention-for-trial"><span class="header-section-number">8.2</span> Developing an intervention for trial</a>
+  <ul class="collapse">
+  <li><a href="#watch" id="toc-watch" class="nav-link" data-scroll-target="#watch"><span class="header-section-number">8.2.1</span> Watch</a></li>
+  <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading"><span class="header-section-number">8.2.2</span> Required reading</a></li>
+  </ul></li>
+  <li><a href="#are-randomised-controlled-trials-ethical" id="toc-are-randomised-controlled-trials-ethical" class="nav-link" data-scroll-target="#are-randomised-controlled-trials-ethical"><span class="header-section-number">8.3</span> Are randomised controlled trials ethical?</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.3.1</span> References</a></li>
+  </ul></li>
+  <li><a href="#ethical-principles-for-trial-design" id="toc-ethical-principles-for-trial-design" class="nav-link" data-scroll-target="#ethical-principles-for-trial-design"><span class="header-section-number">8.4</span> Ethical principles for trial design</a>
+  <ul class="collapse">
+  <li><a href="#respect-for-persons" id="toc-respect-for-persons" class="nav-link" data-scroll-target="#respect-for-persons"><span class="header-section-number">8.4.1</span> Respect for Persons</a></li>
+  <li><a href="#beneficence" id="toc-beneficence" class="nav-link" data-scroll-target="#beneficence"><span class="header-section-number">8.4.2</span> Beneficence</a></li>
+  <li><a href="#justice" id="toc-justice" class="nav-link" data-scroll-target="#justice"><span class="header-section-number">8.4.3</span> Justice</a></li>
+  <li><a href="#respect-for-law-and-public-interest" id="toc-respect-for-law-and-public-interest" class="nav-link" data-scroll-target="#respect-for-law-and-public-interest"><span class="header-section-number">8.4.4</span> Respect for Law and Public Interest</a></li>
+  <li><a href="#an-example" id="toc-an-example" class="nav-link" data-scroll-target="#an-example"><span class="header-section-number">8.4.5</span> An example</a></li>
+  <li><a href="#optional-reading" id="toc-optional-reading" class="nav-link" data-scroll-target="#optional-reading"><span class="header-section-number">8.4.6</span> Optional reading</a></li>
+  </ul></li>
+  <li><a href="#references-1" id="toc-references-1" class="nav-link" data-scroll-target="#references-1"><span class="header-section-number">8.5</span> References</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/jasonacollins/trialdesign/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Trial basics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A good experiment tends to have a number of design features. These include that:</p>
+<ul>
+<li>Your trial is simple</li>
+<li>Your trial is designed to test specific hypothesis or hypotheses</li>
+<li>Your trial is designed to test or controls for alternative hypotheses.</li>
+</ul>
+<p>In this chapter, we will look at the basic structure of a trial that has these features. We will look at the concept of control and how this is implemented in randomised controlled trials. We will examine how to develop a question and how to measure trial outcomes.</p>
+<p>We will also cover another important consideration at the beginning of any trial, ethics.</p>
+<section id="randomisation" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="randomisation"><span class="header-section-number">8.1</span> Randomisation</h2>
+<p>In its simplest form, randomised trials work by splitting trial participants into two or more groups by random lot. Each group is then given a different intervention, with one of those groups typically a “control group” or “test group” that receives no intervention or the status quo.</p>
+<p>Groups might be allocated randomly by drawing numbers out of a hat, flipping a coin or, more commonly in experimental work, using a pseudo-random number generator. It is not the experimenter that decides who gets an intervention or not, but rather chance.</p>
+<p>Randomisation works as a control technique because it enables experimenters to hold approximately equal the sources of experimental bias, such as uncontrolled variables, between the control and treatment groups. These might even be variables of which we are ignorant.</p>
+<p>In <em>Uncontrolled: The Surprising Payoff of Trial-and-Error for Business Politics and Society</em>, Jim Manzi gives the following example:</p>
+<blockquote class="blockquote">
+<p>[S]uppose researchers in 1950 wanted to test the efficacy of a pill designed to reduce blood pressure but did not know that about 10 percent of the human species has a specific gene variant that predisposes them to adult-onset hypertension. If the researchers selected 3,000 people, and randomly assigned 1,500 to a test group who are given the pill and 1,500 to a control group who received a placebo, then about 150 patients in each group should have the gene variant of interest (though the researchers would have no explicit information about this and wouldn’t even have thought to investigate it). Therefore, when these researchers compared the change in blood pressure before and after taking the pill for the test group versus the control group, their estimate would not be biased by a much higher proportion of patients with the gene variant of interest in one group or the other</p>
+</blockquote>
+<p>Randomisation also avoids the need for a detailed understanding of the mechanism underlying the difference in outcomes between groups. James Lind conducted what many considered to be the first clinical trial in 1747 when he gave six scurvy stricken sailors citrus juice, while denying the treatment to another six. He did not need to know that vitamin C was the mechanism, nor anything about human biology to see if it worked.</p>
+<p>Randomisation relies on the law of large numbers, the idea that as sample size increases the sample average converges to the expected value. In the case of the experiment to reduce blood pressure, as the size of the groups increased, we would expect the proportion of people with the hypertension genetic variant to converge to around 10% in each group.</p>
+<p>To think of what that means intuitively, if you had only ten in each group, there is a material chance the groups could have zero, one, or more people with the hypertension variant, although it would rarely be three or more. Therefore, with a small sample, the relative proportions of the variant vary markedly between groups. It is only be collecting large samples that we can expect the groups to approximately equal proportions.</p>
+<p>In the third week of this module (week four of this unit), we will examine how to determine the required sample size.</p>
+<p>After randomisation and application of the treatment, outcomes are then measured for each group. Within certain statistical parameters (also to be covered later in this unit), we can then take the differences between the two groups to be as a result of the different interventions we received. The treatment “caused” the differences, although as noted above, we may not understand the mechanism.</p>
+<p><a href="img/TLA_Figure_3.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/TLA_Figure_3.jpg" class="img-fluid"></a></p>
+</section>
+<section id="developing-an-intervention-for-trial" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="developing-an-intervention-for-trial"><span class="header-section-number">8.2</span> Developing an intervention for trial</h2>
+<p>Applied behavioural science projects are typically designed to change behaviour (or at least to improve an outcome caused by a certain behaviour). The trial is one step of that project.</p>
+<p>Through that project, you will ask many questions that will inform the interventions that you wish to trial. For instance, your sequence of questions might be:</p>
+<ul>
+<li>What is the problem you are trying to solve?</li>
+<li>What behaviour is leading to the outcome?</li>
+<li>What is our theory of the current behaviour?</li>
+<li>What interventions might influence the behaviour?</li>
+</ul>
+<p>You might answer those questions through process such as that described in Module 1 [add link to page 1.4]. Once you have answered them, you will have a shortlist of interventions that you could trial. The purpose of the trial is to differentiate between the effectiveness of those behavioural interventions. Are any of the interventions more effective in improving your outcome of interest?</p>
+<p>There are some other practical questions you need to ask in selecting interventions for trial.</p>
+<p>First, you want the choice of interventions to help answer an interesting question. You want to learn something. For example, has the intervention been found effective or ineffective in similar contexts before? Will you learn something new from trying it again? If text message reminders have been found consistently effective in similar scenarios, a test of text messages versus a control of no message may not be informative. However, a trial varying the content of the message and the theoretical underpinning of that message might be.</p>
+<p>Second, you want to select interventions that you can deliver consistently at scale. For the experiment, you want everyone within each group (control and treatments) to receive the same interventions as others in the group. But more importantly, what would happen if your trial was successful? What will it practically look like at scale relative to your perfect world conception of the intervention? If you have found an intervention to be highly effective, but it is not feasible to roll out at scale, your experiment is not useful.</p>
+<p>The process of selecting interventions for an applied behavioural science trial is usually conceptually simpler than developing interventions for an academic experiment designed to test a theory. In that case, it is important that there is not a confounding theory that gives an equally plausible rationale for the behaviour observed in the experiment. The experimenter needs to understand the most plausible hypotheses that should be controlled for, which might depend on recent developments in theory. An experiment may only appear good at the time, as subsequent work may expose its theoretical flaws.</p>
+<p>But that is not to say that you shouldn’t think about the conceptual and theoretical underpinnings of your interventions in an applied behavioural science trial. There will typically be a theoretical basis for your choice of interventions. That basis will help determine what you should measure. It will inform the interpretation of your results. It can provide the foundation for you to take those interventions into other contexts.</p>
+<section id="watch" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="watch"><span class="header-section-number">8.2.1</span> Watch</h3>
+<p>This video from UNICEF discusses some of the issues in this week’s content, plus foreshadows many of the topics we will be covering over the next few weeks.</p>
+<p>https://youtu.be/Wy7qpJeozec</p>
+</section>
+<section id="required-reading" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="required-reading"><span class="header-section-number">8.2.2</span> Required reading</h3>
+<p>Ames and Hiscox (2016) <em>Guide to developing behavioural interventions for randomised controlled trials: Nine guiding questions</em>, Canberra: Department of the Prime Minister and Cabinet, https://behaviouraleconomics.pmc.gov.au/sites/default/files/files/guide-to-developing-behavioural-interventions-for-randomised-controlled-trials.pdf</p>
+</section>
+</section>
+<section id="are-randomised-controlled-trials-ethical" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="are-randomised-controlled-trials-ethical"><span class="header-section-number">8.3</span> Are randomised controlled trials ethical?</h2>
+<blockquote class="blockquote">
+<p>Randomized experiments—long the gold standard in medicine—are increasingly used throughout the social sciences and professions to evaluate business products and services, government programs, education and health policies, and global aid. We find robust evidence—across 16 studies of 5,873 participants from three populations spanning nine domains—that people often approve of untested policies or treatments (A or B) being universally implemented but disapprove of randomized experiments (A/B tests) to determine which of those policies or treatments is superior. This effect persists even when there is no reason to prefer A to B and even when recipients are treated unequally and randomly in all conditions (A, B, and A/B). This experimentation aversion may be an important barrier to evidence-based practice.</p>
+<p>Meyer et al (2019)</p>
+</blockquote>
+<p>Is it ethical to withhold an intervention that may benefit someone by assigning them to a control group?</p>
+<p>A common response to this question is that this effectively already occurs in many instances without trials:</p>
+<ul>
+<li>Interventions are often piloted, which is equivalent to excluding a group of people who could benefit.</li>
+<li>Interventions are often scaled up, meaning that it takes time for everyone to receive the intervention.</li>
+</ul>
+<p>A randomised controlled trial might be considered more ethical than either of those scenarios as it is similarly a phased introduction, but with a mechanism to determine its effectiveness and improve future outcomes. Absent a robust test, we need to be clear about the limits of our knowledge. There are many cases where an intervention assumed to be helpful was later found to be ineffective or harmful.</p>
+<p>Further, trials often have protocols that in the case of large early effects indicating success or harm, they can be ceased or implemented more rapidly.</p>
+<p>Another related question is whether it is fair to experiment on people at all? Don’t we risk harm?</p>
+<p>One response is that every time you roll out a new program, product, communication or other tool that may change behaviour or affect their wellbeing, you are running an experiment. It’s just that if you’re doing it absent a control group or some other mechanism to determine effectiveness, your experiment does not even have the benefit of enabling you to know whether it works, or is helping or harming people.</p>
+<p>Discussion</p>
+<p>Do you find the above arguments compelling?</p>
+<section id="references" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="references"><span class="header-section-number">8.3.1</span> References</h3>
+<p>Meyer et al (2019) “Objecting to experiments that compare two unobjectionable policies or treatments” <em>Proceedings of the National Academy of Sciences</em>, 116(22), 10723-10728, https://doi.org/10.1073/pnas.1820701116</p>
+</section>
+</section>
+<section id="ethical-principles-for-trial-design" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="ethical-principles-for-trial-design"><span class="header-section-number">8.4</span> Ethical principles for trial design</h2>
+<p>Experimental research is full of examples of ethical failures. One of the most notorious is the Tuskegee Syphilis Study, in which almost 400 hundred African American men were denied safe and effective treatment for almost 40 years.</p>
+<p>Today there are many frameworks for ethical conduct of trials. One landmark framework comes from the Belmont Report (1979), a US Congress initiated national commission into ethical guidelines for research involving human subjects. It proposed three central principles for the conduct of trials: respect for persons, beneficence, and justice.</p>
+<p>The Menlo Report (2012) was later developed in the light of increased digitisation of research practices and the difficulty in applying the ideas in the Belmont report in the digital age. It affirmed the three principles from the Menlo report and proposed a fourth: respect for law and public interest.</p>
+<p>These principles form the basis of many Institutional Review Board ethical approvals in university and government. Each principle is described below:</p>
+<section id="respect-for-persons" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="respect-for-persons"><span class="header-section-number">8.4.1</span> Respect for Persons</h3>
+<p>The Menlo report described respect for persons as having the following components: - Participation as a research subject is voluntary, and follows from informed consent - Treat individuals as autonomous agents and respect their right to determine their own best interests - Respect individuals who are not targets of research yet are impacted - Individuals with diminished autonomy, who are incapable of deciding for themselves, are entitled to protection.</p>
+<p>Practically, respect for persons has tended to revolve around the principle of informed consent. People should be given information about the experiment in a comprehensible format and then voluntarily agree to participate.</p>
+<p>It is easy to come up with scenarios where informed consent does not appear appropriate or would undermine the very purpose of the experiment. For example, in a previous unit (23713 Behavioural Economics and Corporate Decision Making) we discussed research by Marianne Bertrand and Sendhil Mullainathan (2004), who sent fictitious CVs in response to ads with randomly assigned African American or White sounding names. White names received 50% more callbacks for interviews. Obtaining informed consent from employers would be impractical and make the experiment pointless.</p>
+<p>There have been hundreds of discrimination studies of this nature. The lack of consent has been justified for reasons including the limited harm to employers and the social benefit of an accurate measure of discrimination. These justifications have enabled experiments of this nature to pass Institution Review Board processes.</p>
+</section>
+<section id="beneficence" class="level3" data-number="8.4.2">
+<h3 data-number="8.4.2" class="anchored" data-anchor-id="beneficence"><span class="header-section-number">8.4.2</span> Beneficence</h3>
+<p>The Menlo report described beneficience as having the following components: - Do not harm - Maximize probable benefits and minimize probable harms - Systematically assess both risk of harm and benefit.</p>
+<p>One major potential source of harm is “informational risk”, the risk that information gathered in a trial may be disclosed. This is often dealt with through anonymisation, although there are ample examples of failures or re-identification of data after anonymisation processes. This leads to requirements to develop data protection plans and sharing protocols.</p>
+</section>
+<section id="justice" class="level3" data-number="8.4.3">
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="justice"><span class="header-section-number">8.4.3</span> Justice</h3>
+<p>The Menlo report described justice as having the following components: - Each person deserves equal consideration in how to be treated, and the benefits of research should be fairly distributed according to individual need, effort, societal contribution, and merit - Selection of subjects should be fair, and burdens should be allocated equitably across impacted subjects.</p>
+<p>Early conceptions of this concept focused on <em>protection</em>. More focus today, however, is on <em>access</em>, with groups such as women and minority groups needing to be explicity included in trials so that they can benefit from the knowledge gained.</p>
+</section>
+<section id="respect-for-law-and-public-interest" class="level3" data-number="8.4.4">
+<h3 data-number="8.4.4" class="anchored" data-anchor-id="respect-for-law-and-public-interest"><span class="header-section-number">8.4.4</span> Respect for Law and Public Interest</h3>
+<p>The Menlo report described respect for law and public interest as having the following components: - Engage in legal due diligence - Be transparent in methods and results - Be accountable for actions.</p>
+<p>The Belmont report took respect for law and public interest to be part of beneficience, but the Menlo report argues it deserves explicit consideration. It extends beyond the participants to society and law more generally.</p>
+</section>
+<section id="an-example" class="level3" data-number="8.4.5">
+<h3 data-number="8.4.5" class="anchored" data-anchor-id="an-example"><span class="header-section-number">8.4.5</span> An example</h3>
+<blockquote class="blockquote">
+<p>For one week in January 2012, approximately 700,000 Facebook users were placed in an experiment to study “emotional contagion,” the extent to which a person’s emotions are impacted by the emotions of the people with whom they interact. … Participants in the Emotional Contagion experiment were put into four groups: a “negativity-reduced” group, for whom posts with negative words (e.g., sad) were randomly blocked from appearing in the News Feed; a “positivity-reduced” group, for whom posts with positive words (e.g., happy) were randomly blocked; and two control groups, one for the positivity-reduced group and one for the negativity-reduced group. The researchers found that people in the positivity-reduced group used slightly fewer positive words and slightly more negative words relative to the control group. Likewise, they found that people in the negativity-reduced group used slightly more positive words and slightly fewer negative words. Thus, the researchers found evidence of emotional contagion …</p>
+<p>Salganik (2018) <em>Bit by Bit: Social Research in the Digital Age</em></p>
+</blockquote>
+<p>Using the principles above, what ethical questions arise in that experiment?</p>
+</section>
+<section id="optional-reading" class="level3" data-number="8.4.6">
+<h3 data-number="8.4.6" class="anchored" data-anchor-id="optional-reading"><span class="header-section-number">8.4.6</span> Optional reading</h3>
+<p>Kenneally and Dittrich (2012) <em>The Menlo Report: Ethical Principles Guiding Information and Communication Technology Research</em>, Tech. Report., U.S. Department of Homeland Security, https://www.dhs.gov/sites/default/files/publications/CSD-MenloPrinciplesCORE-20120803_1.pdf</p>
+</section>
+</section>
+<section id="references-1" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="references-1"><span class="header-section-number">8.5</span> References</h2>
+<p>Allcott and Kessler (2019) “The Welfare Effects of Nudges: A Case Study of Energy Use Social Comparisons”, <em>American Economic Journal: Applied Economics</em>, 11(1), 236-276, https://doi.org/10.1257/app.20170328</p>
+<p>Belmont Report (1979) <em>The Belmont Report: Ethical Principles and Guidelines for the Protection of Human Subjects of Research</em>, US Department of Health, Education, and Welfare, https://videocast.nih.gov/pdf/ohrp_belmont_report.pdf</p>
+<p>Bertrand and Mullainathan (2004) “Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination”, <em>The American Economic Review</em>, 94(4), 991-1013, https://doi.org/10.1257/0002828042002561</p>
+<p>Haynes et al (2012) <em>Test, Learn, Adapt: Developing Public Policy with Randomised Controlled Trials</em>, Cabinet Office, https://www.gov.uk/government/publications/test-learn-adapt-developing-public-policy-with-randomised-controlled-trials</p>
+<p>Manzi et al (2012) <em>Uncontrolled: The Surprising Payoff of Trial-and-Error for Business Politics and Society</em>, Basic Books</p>
+<p>Salganik (2018) <em>Bit by Bit: Social Research in the Digital Age</em> Princeton University Press</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/trialdesign\.jasoncollins\.blog");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./before-the-trial/organisational-buy-in.html" class="pagination-link" aria-label="Organisational buy-in">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Organisational buy-in</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./running-a-trial/running-a-trial.html" class="pagination-link" aria-label="Running a trial">
+        <span class="nav-page-text">Running a trial</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/licenses/by/4.0/">
+<p>Copyright: CC-BY</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jasonacollins/trialdesign/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
