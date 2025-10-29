@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.23">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>15&nbsp; Ethical principles for trial design – Course notes on trial design</title>
+<title>37&nbsp; Ethical principles for trial design – Course notes on trial design</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,18 +50,19 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../4-error-control-effect-sizes-and-sample-arrangement.html" rel="next">
-<link href="../running-a-trial/alternative-trial-design-processes.html" rel="prev">
+<link href="../statistical-power/statistical-power.html" rel="next">
+<link href="../running-a-trial/scaling.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-be3c5a4880e563bd7b769321a328d6c1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1ee7fb08bd24cb293f77f2e00fc4ba75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,10 +94,10 @@ div.csl-indent {
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
-<meta property="og:title" content="15&nbsp; Ethical principles for trial design – Course notes on trial design">
+<meta property="og:title" content="37&nbsp; Ethical principles for trial design – Course notes on trial design">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="Course notes on trial design">
-<meta name="twitter:title" content="15&nbsp; Ethical principles for trial design – Course notes on trial design">
+<meta name="twitter:title" content="37&nbsp; Ethical principles for trial design – Course notes on trial design">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
@@ -108,6 +109,8 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Course notes on trial design</span>
     </a>
@@ -138,7 +141,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/ethical-principles-for-trial-design.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/ethical-principles-for-trial-design.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -148,6 +151,10 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -242,14 +249,50 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Define and diagnose the problem</span></span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trial-basics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Trial basics</span></span></a>
+  <a href="../before-the-trial/partial-compliance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Partial compliance</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../before-the-trial/attrition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Attrition</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../before-the-trial/spillovers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Spillovers</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../before-the-trial/evaluation-driven-effects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Evaluation-driven effects</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../before-the-trial/develop-the-intervention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../before-the-trial/program-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../before-the-trial/design-and-select-an-intervention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../running-a-trial/running-a-trial.html" class="sidebar-item-text sidebar-link">
@@ -261,34 +304,124 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/steps-in-a-randomised-trial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/define-the-outcome-measure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../running-a-trial/level-of-outcome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Level of outcome</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Level of outcome</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/random-assignment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/random-sample-versus-random-assignment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Random sample versus random assignment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/what-can-be-randomised.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">What can be randomised?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/opportunities-to-randomise.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Opportunities to randomise</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/level-of-randomisation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Level of randomisation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/three-research-designs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Three research designs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/randomisation-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Randomisation techniques</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/data-collection-plan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/pilot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/trial-implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/data-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/an-example-data-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/threats-to-the-integrity-of-the-experiment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/alternative-trial-design-processes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../running-a-trial/scaling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/ethical-principles-for-trial-design.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../4-error-control-effect-sizes-and-sample-arrangement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Error control, effect sizes and sample arrangement</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../interpreting-trial-results/interpreting-trial-results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interpreting trial results</span></a>
+            <a href="../statistical-power/statistical-power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Statistical power, error control, and effect sizes</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -296,68 +429,121 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../statistical-power/type-i-and-type-ii-errors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../statistical-power/type-i-error-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../statistical-power/statistical-power-content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../statistical-power/power-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../statistical-power/an-example-power-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../statistical-power/effect-sizes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../interpreting-trial-results/interpreting-trial-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interpreting trial results</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/navigating-the-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../interpreting-trial-results/reading-research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Reading research</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/the-replication-crisis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/replication-and-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/publication-bias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/p-hacking-and-the-garden-of-forking-paths.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/pre-analysis-plans-and-preregistration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/type-m-and-type-s-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/validity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-context.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/heterogeneity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
   </div>
 </li>
       </ul>
@@ -378,12 +564,12 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#respect-for-persons" id="toc-respect-for-persons" class="nav-link active" data-scroll-target="#respect-for-persons"><span class="header-section-number">15.1</span> Respect for Persons</a></li>
-  <li><a href="#beneficence" id="toc-beneficence" class="nav-link" data-scroll-target="#beneficence"><span class="header-section-number">15.2</span> Beneficence</a></li>
-  <li><a href="#justice" id="toc-justice" class="nav-link" data-scroll-target="#justice"><span class="header-section-number">15.3</span> Justice</a></li>
-  <li><a href="#respect-for-law-and-public-interest" id="toc-respect-for-law-and-public-interest" class="nav-link" data-scroll-target="#respect-for-law-and-public-interest"><span class="header-section-number">15.4</span> Respect for Law and Public Interest</a>
+  <li><a href="#respect-for-persons" id="toc-respect-for-persons" class="nav-link active" data-scroll-target="#respect-for-persons"><span class="header-section-number">37.1</span> Respect for Persons</a></li>
+  <li><a href="#beneficence" id="toc-beneficence" class="nav-link" data-scroll-target="#beneficence"><span class="header-section-number">37.2</span> Beneficence</a></li>
+  <li><a href="#justice" id="toc-justice" class="nav-link" data-scroll-target="#justice"><span class="header-section-number">37.3</span> Justice</a></li>
+  <li><a href="#respect-for-law-and-public-interest" id="toc-respect-for-law-and-public-interest" class="nav-link" data-scroll-target="#respect-for-law-and-public-interest"><span class="header-section-number">37.4</span> Respect for Law and Public Interest</a>
   <ul class="collapse">
-  <li><a href="#an-example" id="toc-an-example" class="nav-link" data-scroll-target="#an-example"><span class="header-section-number">15.4.1</span> An example</a></li>
+  <li><a href="#an-example" id="toc-an-example" class="nav-link" data-scroll-target="#an-example"><span class="header-section-number">37.4.1</span> An example</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jasonacollins/trialdesign/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -391,9 +577,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/ethical-principles-for-trial-design.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/ethical-principles-for-trial-design.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></h1>
+<h1 class="title"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></h1>
 </div>
 
 
@@ -414,8 +600,8 @@ div.csl-indent {
 <p>Today there are many frameworks for ethical conduct of trials. One landmark framework comes from the Belmont Report <span class="citation" data-cites="thebelm1979">(<a href="../references.html#ref-thebelm1979" role="doc-biblioref">1979</a>)</span>, a US Congress initiated national commission into ethical guidelines for research involving human subjects. It proposed three central principles for the conduct of trials: respect for persons, beneficence, and justice.</p>
 <p>The Menlo Report <span class="citation" data-cites="kenneally2012">(<a href="../references.html#ref-kenneally2012" role="doc-biblioref">2012</a>)</span> was later developed in the light of increased digitisation of research practices and the difficulty in applying the ideas in the Belmont report in the digital age. It affirmed the three principles from the Menlo report and proposed a fourth: respect for law and public interest.</p>
 <p>These principles form the basis of many Institutional Review Board ethical approvals in university and government. Each principle is described below:</p>
-<section id="respect-for-persons" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="respect-for-persons"><span class="header-section-number">15.1</span> Respect for Persons</h2>
+<section id="respect-for-persons" class="level2" data-number="37.1">
+<h2 data-number="37.1" class="anchored" data-anchor-id="respect-for-persons"><span class="header-section-number">37.1</span> Respect for Persons</h2>
 <p>The Menlo report described respect for persons as having the following components:</p>
 <ul>
 <li>Participation as a research subject is voluntary, and follows from informed consent</li>
@@ -426,8 +612,8 @@ div.csl-indent {
 <p>It is easy to come up with scenarios where informed consent does not appear appropriate or would undermine the very purpose of the experiment. For example, Marianne Bertrand and Sendhil Mullainathan <span class="citation" data-cites="bertrand2004">(<a href="../references.html#ref-bertrand2004" role="doc-biblioref">2004</a>)</span> sent fictitious CVs in response to ads with randomly assigned African American or White sounding names. White names received 50% more callbacks for interviews. Obtaining informed consent from employers would be impractical and make the experiment pointless.</p>
 <p>There have been hundreds of discrimination studies of this nature. The lack of consent has been justified for reasons including the limited harm to employers and the social benefit of an accurate measure of discrimination. These justifications have enabled experiments of this nature to pass Institution Review Board processes.</p>
 </section>
-<section id="beneficence" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="beneficence"><span class="header-section-number">15.2</span> Beneficence</h2>
+<section id="beneficence" class="level2" data-number="37.2">
+<h2 data-number="37.2" class="anchored" data-anchor-id="beneficence"><span class="header-section-number">37.2</span> Beneficence</h2>
 <p>The Menlo report described beneficence as having the following components:</p>
 <ul>
 <li>Do not harm</li>
@@ -436,8 +622,8 @@ div.csl-indent {
 </ul>
 <p>One major potential source of harm is “informational risk”, the risk that information gathered in a trial may be disclosed. This is often dealt with through anonymisation, although there are ample examples of failures or re-identification of data after anonymisation processes. This leads to requirements to develop data protection plans and sharing protocols.</p>
 </section>
-<section id="justice" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="justice"><span class="header-section-number">15.3</span> Justice</h2>
+<section id="justice" class="level2" data-number="37.3">
+<h2 data-number="37.3" class="anchored" data-anchor-id="justice"><span class="header-section-number">37.3</span> Justice</h2>
 <p>The Menlo report described justice as having the following components:</p>
 <ul>
 <li>Each person deserves equal consideration in how to be treated, and the benefits of research should be fairly distributed according to individual need, effort, societal contribution, and merit</li>
@@ -445,8 +631,8 @@ div.csl-indent {
 </ul>
 <p>Early conceptions of this concept focused on <em>protection</em>. More focus today, however, is on <em>access</em>, with groups such as women and minority groups needing to be explicitly included in trials so that they can benefit from the knowledge gained.</p>
 </section>
-<section id="respect-for-law-and-public-interest" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="respect-for-law-and-public-interest"><span class="header-section-number">15.4</span> Respect for Law and Public Interest</h2>
+<section id="respect-for-law-and-public-interest" class="level2" data-number="37.4">
+<h2 data-number="37.4" class="anchored" data-anchor-id="respect-for-law-and-public-interest"><span class="header-section-number">37.4</span> Respect for Law and Public Interest</h2>
 <p>The Menlo report described respect for law and public interest as having the following components:</p>
 <ul>
 <li>Engage in legal due diligence</li>
@@ -454,8 +640,8 @@ div.csl-indent {
 <li>Be accountable for actions.</li>
 </ul>
 <p>The Belmont report took respect for law and public interest to be part of beneficence, but the Menlo report argues it deserves explicit consideration. It extends beyond the participants to society and law more generally.</p>
-<section id="an-example" class="level3" data-number="15.4.1">
-<h3 data-number="15.4.1" class="anchored" data-anchor-id="an-example"><span class="header-section-number">15.4.1</span> An example</h3>
+<section id="an-example" class="level3" data-number="37.4.1">
+<h3 data-number="37.4.1" class="anchored" data-anchor-id="an-example"><span class="header-section-number">37.4.1</span> An example</h3>
 <blockquote class="blockquote">
 <p>For one week in January 2012, approximately 700,000 Facebook users were placed in an experiment to study “emotional contagion,” the extent to which a person’s emotions are impacted by the emotions of the people with whom they interact. … Participants in the Emotional Contagion experiment were put into four groups: a “negativity-reduced” group, for whom posts with negative words (e.g., sad) were randomly blocked from appearing in the News Feed; a “positivity-reduced” group, for whom posts with positive words (e.g., happy) were randomly blocked; and two control groups, one for the positivity-reduced group and one for the negativity-reduced group. The researchers found that people in the positivity-reduced group used slightly fewer positive words and slightly more negative words relative to the control group. Likewise, they found that people in the negativity-reduced group used slightly more positive words and slightly fewer negative words. Thus, the researchers found evidence of emotional contagion …</p>
 <p>Salganik <span class="citation" data-cites="salganik2018">(<a href="../references.html#ref-salganik2018" role="doc-biblioref">2018</a>)</span> <em>Bit by Bit: Social Research in the Digital Age</em></p>
@@ -738,13 +924,14 @@ window.onload = function() {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1093,13 +1280,13 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../running-a-trial/alternative-trial-design-processes.html" class="pagination-link" aria-label="Alternative trial design processes">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span>
+      <a href="../running-a-trial/scaling.html" class="pagination-link" aria-label="Scaling">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Scaling</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../4-error-control-effect-sizes-and-sample-arrangement.html" class="pagination-link" aria-label="Error control, effect sizes and sample arrangement">
-        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Error control, effect sizes and sample arrangement</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../statistical-power/statistical-power.html" class="pagination-link" aria-label="Statistical power, error control, and effect sizes">
+        <span class="nav-page-text">Statistical power, error control, and effect sizes</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

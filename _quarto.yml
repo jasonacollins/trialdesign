@@ -24,18 +24,46 @@ book:
       chapters:
         - before-the-trial/organisational-buy-in.md
         - before-the-trial/define-and-diagnose-the-problem.md
+        - before-the-trial/partial-compliance.md
+        - before-the-trial/attrition.md
+        - before-the-trial/spillovers.md
+        - before-the-trial/evaluation-driven-effects.md
         - before-the-trial/develop-the-intervention.md
+        - before-the-trial/program-theory.md
+        - before-the-trial/design-and-select-an-intervention.md
     - part: running-a-trial/running-a-trial.qmd
       chapters:
         - running-a-trial/steps-in-a-randomised-trial.md
         - running-a-trial/define-the-outcome-measure.md
+        - running-a-trial/level-of-outcome.md
         - running-a-trial/random-assignment.qmd
+        - running-a-trial/random-sample-versus-random-assignment.md
+        - running-a-trial/what-can-be-randomised.md
+        - running-a-trial/opportunities-to-randomise.md
+        - running-a-trial/level-of-randomisation.md
+        - running-a-trial/three-research-designs.md
+        - running-a-trial/randomisation-techniques.md
+        - running-a-trial/data-collection-plan.md
+        - running-a-trial/pilot.md
+        - running-a-trial/trial-implementation.md
+        - running-a-trial/data-analysis.md
+        - running-a-trial/an-example-data-analysis.qmd
+        - running-a-trial/threats-to-the-integrity-of-the-experiment.md
         - running-a-trial/alternative-trial-design-processes.md
+        - running-a-trial/scaling.md
         - running-a-trial/ethical-principles-for-trial-design.md
-    - 4-error-control-effect-sizes-and-sample-arrangement.qmd
+    - part: statistical-power/statistical-power.md
+      chapters:
+        - statistical-power/type-i-and-type-ii-errors.md
+        - statistical-power/type-i-error-control.md
+        - statistical-power/statistical-power-content.md
+        - statistical-power/power-analysis.md
+        - statistical-power/an-example-power-analysis.qmd
+        - statistical-power/effect-sizes.md
     - part: interpreting-trial-results/interpreting-trial-results.md
       chapters:
         - interpreting-trial-results/navigating-the-literature.md
+        - interpreting-trial-results/reading-research.md
         - interpreting-trial-results/the-replication-crisis.md
         - interpreting-trial-results/replication-and-reproducibility.md
         - interpreting-trial-results/publication-bias.md
