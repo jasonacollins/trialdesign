@@ -1,0 +1,217 @@
+---
+title: "An example data analysis: test of proportions"
+format: html
+code-fold: true
+bibliography: references.bib
+---
+
+## Reproducing the algorithm aversion paper
+
+In this section, I replicate the analysis of @dietvorst2015.
+
+The data for @dietvorst2015 is available from [ResearchBox](https://researchbox.org/379&PEER_REVIEW_passcode=MOQTEQ) and the [Journal of Experimental Psychology: General website](https://supp.apa.org/psycarticles/supplemental/xge0000033/xge0000033_supp.html).
+
+The download includes the Stata code used by @dietvorst2015 to analyse the data. I do not know Stata, so I asked [ChatGPT](https://chat.openai.com) to translate the code into R. While that translation contained some errors, I made it operational with only minor changes.
+
+In what follows I provide the R code that I used to reproduce the analysis. You can expand each "Code" item to see the code or copy it to replicate the results yourself.
+
+## Analysis
+
+I start by downloading and unzipping the data file and loading the CSV for Study 1 into the R environment. I then made some amendments to the variable names to make them more readable (e.g. replacing the numbers for each condition with the words they represent: 1=control, etc.).
+
+```{r}
+# Data downloaded from https://researchbox.org/379&PEER_REVIEW_passcode=MOQTEQ
+# Open Zip file from research box
+# unzip("ResearchBox_379.zip")
+
+#Load data from csv
+data <- read.csv("ResearchBox 379/Data/Study 1 Data.csv", header = TRUE, sep = ",", na.strings = ".")
+
+# Change to camel case
+colnames(data) <- paste(tolower(substring(colnames(data), 1, 1)), substring(colnames(data), 2), sep = "")
+names(data)[1] <- "ID"
+
+# Define label mappings
+condition <- c("1" = "control", "2" = "human", "3" = "model", "4" = "model&human")
+modelBonus <- c("0" = "choseHuman", "1" = "choseModel")
+binary <- c("0" = "no", "1" = "yes")
+betterStage2Bonus <- c("1" = "model", "2" = "equal", "0" = "human")
+confidence <- c("1" = "none", "2" = "little", "3" = "some", "4" = "fairAmount", "5" = "aLot")
+
+# Apply label mappings to variables - have done more here than required for analysis, but might be useful later
+data$condition <- factor(data$condition, labels = condition)
+data$modelBonus <- factor(data$modelBonus, labels = modelBonus)
+data$humanAsGoodStage1 <- factor(data$humanAsGoodStage1, labels = binary)
+data$humanBetterStage1 <- factor(data$humanBetterStage1, labels = binary)
+data$humanBetterStage2 <- factor(data$humanBetterStage2, labels = binary)
+data$betterStage2Bonus <- factor(data$betterStage2Bonus, labels = betterStage2Bonus)
+data$model <- factor(data$model, labels = binary)
+data$human <- factor(data$human, labels = binary)
+data$modelConfidence <- factor(data$modelConfidence, labels = confidence)
+data$humanConfidence <- factor(data$humanConfidence, labels = confidence)
+```
+
+I then run a quick check on the number of observations. I note from the paper that I should find 369 participants at the start, but 8 of these participants did not complete enough questions to get to the dependent variable. That leaves 361 participants across each of the conditions.
+
+```{r}
+# Total participants
+length(data$ID)
+
+# Number of participants who chose between model and human
+table(data$modelBonus)
+
+```
+
+As expected, I find 369 participants and 201+160=361 dependent variable observations.
+
+I then broke down the dependent variable findings in more detail to see what each participant chose (human or model) in each condition.
+
+```{r, warnings=FALSE, message=FALSE}
+
+# Choice of participants in each condition
+
+conditions <- table(data$modelBonus, data$condition)
+conditions <- rbind(conditions, total=colSums(conditions))
+conditions
+
+```
+
+Two chi-squared tests were then run to see if there was a significant difference between the conditions. The results are shown in the Study 1 diagram in Figure 3.
+
+The first was a test of whether there was a difference between the two conditions without and the two conditions with the model. This is a test of the core hypothesis.
+
+```{r, warnings=FALSE, message=FALSE}
+
+# chisq.test between conditions 1 and 2 (control and human) and 3 and 4 (model and model&human)
+
+chisq.test(table(data$modelBonus, data$model), correct=FALSE)
+
+```
+
+The second was a test of whether there was a difference between the two conditions without and the two conditions with the human experience. This test was run to see whether the experience in seeing their own errors changed the participants' choices.
+
+```{r, warnings=FALSE, message=FALSE}
+
+# chisq.test between conditions 1 and 3 (control and model) and 2 and 4 (human and model&human)
+
+chisq.test(table(data$modelBonus, data$human), correct=FALSE)
+
+```
+
+```
+
+I then plotted that data in a bar chart to illustrate the results. This matches Figure 3 in the paper. 
+
+```{r, warnings=FALSE, message=FALSE}
+## load ggplot2 for chart and tidyverse packages for data manipulation
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# convert table to data frame for future operations
+conditions <- as.data.frame.matrix(conditions) 
+
+#percentage choosing model in each condition
+
+conditions <- rbind(conditions, percent=conditions[2,]/conditions[3,])
+conditions <- tibble::rownames_to_column(conditions, "variable")
+conditions_long <- pivot_longer(conditions, cols = -variable, names_to = "treatment", values_to = "value", cols_vary = "slowest")
+conditions_long <- conditions_long[c(2, 1, 3)]
+
+# ggplot2 bar plot of percent rows of conditions data frame
+plot_data <- filter(conditions_long, variable=="percent")
+
+ggplot(plot_data, aes(x=treatment, y=value)) +
+  geom_col()+
+  labs(title="Percent choosing model in each condition", x="Condition", y="Percent choosing model") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+
+  # Set the theme
+  theme_minimal()+
+  geom_hline(yintercept = 0, linewidth=0.25)
+```
+
+Finally, I replicate the analysis related to Study 1 as shown in Table 3.
+
+```{r}
+
+# Calculate human and model mean rewards 
+m<-round(mean(data$bonusFromModel, na.rm=TRUE), 2)
+h<-round(mean(data$bonusFromHuman, na.rm=TRUE), 2)
+
+# Bonus if chose model vs. human
+bonusModel <- t.test(data$bonusFromModel, data$bonusFromHuman, paired=TRUE)
+p <- signif(bonusModel$p.value, 2)
+t <- round(bonusModel$statistic, 2)
+d <- round(bonusModel$estimate, 2)
+
+# Participants' AAE compared to model's AAE for stage 1 forecasts
+stage1AAE <- t.test(data$humanAAE1, data$modelAAE1, paired=TRUE)
+
+p1 <- signif(stage1AAE$p.value, 2)
+t1 <- round(stage1AAE$statistic, 2)
+d1 <- round(stage1AAE$estimate, 2)
+
+AAEm<-round(mean(data[data$condition=='model&human', 'modelAAE1'], na.rm=TRUE), 2)
+AAEh<-round(mean(data[data$condition=='model&human', 'humanAAE1'], na.rm=TRUE), 2)
+
+# Participants' AAE compared to model's AAE for stage 2 forecasts
+stage2AAE <- t.test(data$humanAAE2, data$modelAAE2, paired=TRUE)
+
+p2 <- signif(stage2AAE$p.value, 2)
+t2 <- round(stage2AAE$statistic, 2)
+d2 <- round(stage2AAE$estimate, 2)
+
+AAEm2<-round(mean(data$modelAAE2, na.rm=TRUE), 2)
+AAEh2<-round(mean(data$humanAAE2, na.rm=TRUE), 2)
+
+```
+
+Table 3 results
+
+|               | Model     | Human     | Difference | t score | p value |
+|---------------|-----------|-----------|------------|---------|---------|
+| Bonus         | \$`r m`   | \$`r h`   | \$`r d`    | `r t`   | `r p`   |
+| Stage 1 error | `r AAEm`  | `r AAEh`  | `r d1`     | `r t1`  | `r p1`  |
+| Stage 2 error | `r AAEm2` | `r AAEh2` | `r d2`     | `r t2`  | `r p2`  |
+
+The numbers match those provided in the paper.
+
+## Regression
+
+An alternative approach is to do the comparison between treatment and comparison groups within a regression framework. This will give us the same results but in a different format.
+
+To determine whether there is a treatment effect, we use the regression:
+
+$$
+Y_i=c+\beta T_i+\epsilon_i
+$$
+
+Where $Y_i$ is the number of participants that chose the model, $c$ is a constant, and $T_i$ is a treatment dummy. $T_i=0$ if participant $i$ is in the control group and 1 if participant $i$ is in the treatment group. $\beta$ is the coefficient of the treatment dummy.
+
+Logistic regression is used here as we are considering the probability of an event taking place (choosing the model). If we were considering a continuous variable (e.g. amount saved due to an intervention), we would use linear regression, which is typically easier to interpret.
+
+```{r}
+# Regression to determine whether there is a treatment effect
+reg <- glm(modelBonus ~ model, data=data, family=binomial)
+
+# Show results
+summary(reg)
+
+```
+
+The p-value of 2.09e-13 is not identical to that from the chi-squared test above (3.419e-14) as there are slight differences in the underlying tests, but either way, the result is significant. We can see the equivalence of the underlying result by examining the parameter estimates.
+
+The intercept of 0.5792 implies that the odds of choosing the model are $e^{0.5792}$ for those in the control condition, which is equal to the observed proportion of 116 choosing the model compared to 65 choosing the human (116/65=1.784). The estimate of $\beta$ of -1.7077 implies that the ratio of the odds of those choosing the model in the control treatment condition relative to those in the control condition is $e^{-1.7077}=0.181$, which is equal to the observed proportion of 44 choosing the model and 136 choosing the model in the treatment condition, compared to the 116 choosing the model and 65 choosing the human in the control condition ((44/136)/(116/65)=0.181).
+
+The benefit of using a regression approach is that other covariates can be added to the analysis. For example, if there was a difference between male and female respondents, we could add a dummy for gender to the analysis.
+
+Including covariates in the regression can give us a more precise estimate of the impact of the intervention as they can reduce unexplained variance. However, including covariates can reduce the precision of our estimate of the treatment effect if they don’t explain enough error variance.
+
+Often, the best covariate to include is a baseline measure of the outcome variable. With stratified randomisation, it is often recommended to add an indicator for each different stratum.
+
+
+## References
+
+::: {#refs}
+:::

@@ -15,16 +15,23 @@ book:
         - experimental-foundations/the-experimental-approach-in-economics-and-psychology.md
         - experimental-foundations/the-role-of-experiments.md
         - experimental-foundations/randomised-trials.qmd
+        - experimental-foundations/how-can-randomisation-help.qmd
         - experimental-foundations/lab-versus-field.md
+        - experimental-foundations/types-of-experiments.md
+        - experimental-foundations/control.md
         - experimental-foundations/are-randomised-controlled-trials-ethical.md
     - part: before-the-trial/before-the-trial.md
       chapters:
         - before-the-trial/organisational-buy-in.md
-    - trial-basics.qmd
+        - before-the-trial/define-and-diagnose-the-problem.md
+        - before-the-trial/develop-the-intervention.md
     - part: running-a-trial/running-a-trial.qmd
       chapters:
-        - running-a-trial/level-of-outcome.qmd
+        - running-a-trial/steps-in-a-randomised-trial.md
+        - running-a-trial/define-the-outcome-measure.md
+        - running-a-trial/random-assignment.qmd
         - running-a-trial/alternative-trial-design-processes.md
+        - running-a-trial/ethical-principles-for-trial-design.md
     - 4-error-control-effect-sizes-and-sample-arrangement.qmd
     - part: interpreting-trial-results/interpreting-trial-results.md
       chapters:
@@ -69,14 +76,17 @@ format:
     theme: cosmo
     fontcolor: black
     fontsize: 20px
-    css: styles.css
+    css:
+      - styles.css
+      - include/webex.css
     html-math-method: katex
     link-external-newwindow: true
-    ink-external-filter: '^(?:http:|https:)\/\/trialdesign\.jasoncollins\.blog\/custom'
+    ink-external-filter: ^(?:http:|https:)\/\/trialdesign\.jasoncollins\.blog\/custom
     code-fold: true
     fig-cap-location: top
     toc-expand: 1
-    toc-title: "On this page"
+    toc-title: On this page
+    include-after-body: include/webex.js
 
 lightbox: auto
 

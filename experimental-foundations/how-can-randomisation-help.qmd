@@ -1,0 +1,36 @@
+# How can randomisation help?
+
+Participants and non-participants are chosen at random.
+
+There is no reason, other than chance, that they are selected into the program. On average, participants and non-participants have the same characteristics. They would, on average, have the same outcomes. 
+
+Any difference at the end is due to the program (or chance, to which we will return).
+
+![](img/TLA_Figure_3.jpg)
+
+*Figure from @haynes2012*
+
+Randomisation avoids the need for a detailed understanding of the mechanism underlying the difference in outcomes between groups. James Lind conducted what many considered to be the first clinical trial in 1747 when he gave six scurvy stricken sailors citrus juice, while denying the treatment to another six. He did not need to know that vitamin C was the mechanism, nor anything about human biology to see if it worked.
+
+**Question**
+
+A firm provides well-being training to all employees interested. At the end of the program, employees who participated in the program had lower stress levels than those who did not participate in the program.
+
+Can you conclude from these data that the program was effective in reducing stress?
+
+```{r echo=FALSE}
+
+opts_counterfactual <-c(
+  "Yes because those who participated had lower stress level.",
+  answer = "No, because employees who participated may have had lower stress level before the program already."
+)
+
+```
+
+`r longmcq(opts_counterfactual)`
+
+`r hide("Click here to see an explanation")`
+
+As you did not randomise and control access, employees who participated may have had lower stress levels before the program.
+
+`r unhide()`

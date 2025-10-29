@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>7.6 Data analysis</title>
+<meta name="identifier" content="gb94855d469e7790bed7bc3835d528dca"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p><span style="font-size: 10pt;"><strong><img id="4158558" src="$IMS-CC-FILEBASE$/Updated%20banners/23717_Trial_Design_Banner-22.png" alt="23717_Trial_Design_Banner-22.png" loading="lazy"></strong></span></p>
+<p><strong></strong>Once the program has been implemented and you have completed the data collection, you need to analyse these data.</p>
+<h2>What is involved</h2>
+<div class="content-box">
+<div class="grid-row">
+<div class="col-xs-12 col-md-4">
+<div class="styleguide-section__grid-demo-element">
+<div style="background-color: #f4ecf7; padding: 15px 30px; min-height: 180px;">
+<p><strong>Compare outcomes for treatment group and control group</strong></p>
+<p>This is typically straightforward because you have randomised people into a treatment and a control group.</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-4">
+<div class="styleguide-section__grid-demo-element">
+<div style="background-color: #e8daef; padding: 15px 30px; min-height: 180px;">
+<p><strong>Conduct possible heterogeneity analysis</strong></p>
+<p>It is sometimes interesting to see if the treatment effect differs in different subgroups (heterogeneous treatment effects). For example, is the effect larger for females than for males? To do this, you can compare outcomes for the treatment group and control group among the sample of females, and repeat this comparison for the sample of males. The group must share an observable characteristic that was determined before the start of the program.</p>
+<p>We estimate the impact of the program on a subgroup by dropping all the individuals who do not belong to the subgroup and then running the same estimation procedure we do for the full sample.</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-4">
+<div class="styleguide-section__grid-demo-element">
+<div style="background-color: #d7bde2; padding: 15px 30px; min-height: 180px;">
+<p><strong>Be aware of data mining when there are many outcomes</strong></p>
+<p>If you have many outcomes, you may find a treatment effect only for a few but not consistently for all of them. One needs to be careful not to search too much for an effect that does not exist. Researchers and practitioners now often register a pre-analysis plan for their trial.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Before we start any analysis, we prepare (or “clean”) the data to ensure we understand their properties. We might:</p>
+<ul>
+<li>Correct any errors in the data. Surveys should have consistency checks built in. However, we should not “overclean” the data.</li>
+<li>Check for outliers. Are the results sensitive to whether certain observations are included or excluded from the analyses? Usually, we do not drop these outliers from the data unless we have prespecified exclusion criterion in the pre-analysis plan.</li>
+<li>Calculate attrition rates. A high attrition rate will tell us that we will need to undertake some analysis to indicate how sensitive our results are to different assumptions about what happened to those for whom we do not have data.</li>
+<li>Calculate compliance rates.</li>
+<li>Plot and describe the data. Exploring the data before formal statistical analysis is useful to uncover problems in the data and understand better the results.</li>
+</ul>
+<p>One illustration of the importance of examining the data visually and descriptively relates to Shu et al. (2012). They reported that “signing before—rather than after—the opportunity to cheat makes ethics salient when they are needed most and significantly reduces dishonesty.” The paper contained the results of a field experiment whereby applicants for vehicle insurance reported higher mileage and incurred higher premiums when they signed at the top.</p>
+<p>Anonymous authors (2021) on <em>Data Colada</em> examined the data and wrote:</p>
+<blockquote>Let's first think about what the distribution of miles driven should look like. If there were about a year separating the Time 1 and Time 2 mileages, we might expect something like the figure below, taken from the UK Department of Transportation (.pdf) based on similar data (two consecutive odometer readings) collected in 2010:</blockquote>
+<p><img src="$IMS-CC-FILEBASE$/Uploaded%20Media/UK-screenshot-768x517.png" alt="UK-screenshot-768x517.png" width="640" height="431" data-api-endpoint="https://canvas.uts.edu.au/api/v1/courses/25795/files/6397090" data-api-returntype="File" loading="lazy"></p>
+<blockquote>
+<p>As we might expect, we see that some people drive a whole lot, some people drive very little, and most people drive a moderate amount.</p>
+<p>As noted by the authors of the 2012 paper, it is unknown how much time elapsed between the baseline period (Time 1) and their experiment (Time 2), and it was reportedly different for different customers [3]. For some customers the “miles driven” measure may reflect a 2-year period, while for others it may be considerably more or less than that [4]. It is therefore hard to know what the distribution of miles driven should look like in those data. It is not hard, however, to know what it should not look like. It should not look like this:</p>
+</blockquote>
+<p><img src="$IMS-CC-FILEBASE$/Uploaded%20Media/F1-Uniform-change-2021-07-03-768x473.png" alt="F1-Uniform-change-2021-07-03-768x473.png" width="640" height="394" data-api-endpoint="https://canvas.uts.edu.au/api/v1/courses/25795/files/6397091" data-api-returntype="File" loading="lazy"></p>
+<p>The data had been fraudulently generated. However, during the original analysis by Shu et al. (2012) and a review of the data by Kristal et al. (2020), nobody had picked this up as (likely) no one had done a simple plot.</p>
+<p><strong>References</strong></p>
+<div class="content-box pad-box-mini" style="background-color: #f5f5f5; padding: 20px;">
+<p><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Anonymous (2021) “[98] Evidence of Fraud in an Influential Field Experiment About Dishonesty.” </span><em style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">Data Colada</em><span style="color: var(--ic-brand-font-color-dark); font-family: inherit; font-size: 1rem;">. August 17, 2021. </span><a style="font-family: inherit; font-size: 1rem;" href="http://datacolada.org/98">http://datacolada.org/98</a></p>
+<p>Kristal et al. (2020) "Signing at the beginning versus at the end does not decrease dishonesty", PNAS, 117(13), 7103-7107, <a href="https://doi.org/10.1073/pnas.1911695117" target="_blank">https://doi.org/10.1073/pnas.1911695117</a>&nbsp;</p>
+<p>Shu et al. (2012) "Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end",<span>&nbsp;</span><em>PNAS</em>, 109(38),<span>&nbsp;</span><a class="external" href="https://doi.org/10.1073/pnas.1209746109" target="_blank"><span>https://doi.org/10.1073/pnas.1209746109</span></a></p>
+</div>
+</body>
+</html>

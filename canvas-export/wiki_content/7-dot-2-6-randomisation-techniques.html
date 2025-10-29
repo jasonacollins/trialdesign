@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>7.2.6 Randomisation techniques</title>
+<meta name="identifier" content="g3a1746aea5dc6f3331d2cc2c6cd1ec9c"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p><img id="4158542" src="$IMS-CC-FILEBASE$/Updated%20banners/23717_Trial_Design_Banner-04.png" alt="23717_Trial_Design_Banner-04.png" loading="lazy"></p>
+<p>As we discussed earlier, randomisation provides indirect control of uncontrolled variables. It provides us with a way to infer that differences in outcomes are due to the treatments and not due to the individual characteristics of the experimental participants.</p>
+<p>However, randomisation is not a panacea, nor is it always practical to undertake a pure randomisation. The below discusses two complications that can be involved in randomisation.</p>
+<div class="enhanceable_content tabs">
+<ul>
+<li style="border: solid 1px #C7CDD1;">
+<h2><a style="font-size: 14pt; text-decoration: none;" href="#tab-1"><strong><span style="font-size: 12pt;">Performing random assignment</span></strong></a></h2>
+</li>
+<li style="border: solid 1px #C7CDD1;">
+<h2><a style="font-size: 14pt; text-decoration: none;" href="#tab-2"><strong><span style="font-size: 12pt;">Blocking / stratification</span></strong></a></h2>
+</li>
+<li style="border: solid 1px #C7CDD1;">
+<h2><span style="font-size: 12pt;"><a style="text-decoration: none;" href="#tab-3"><strong>Within-subject designs</strong></a></span></h2>
+</li>
+</ul>
+<div id="tab-1" style="font-size: 1rem; border: solid 1px #C7CDD1; border-width: 0px 1px 1px 1px;">
+<p>To perform random assignment, we need:</p>
+<ul>
+<li>A list of eligible units (e.g. people, branches, schools)</li>
+<li>The number of randomisation cells (e.g. two if you have one treatment and the control)</li>
+<li>The allocation fraction: the proportion of the eligible units to be assigned to each group (e.g. 50%, 50%)</li>
+<li>If feasible, initial data on the eligible units for stratification and balance</li>
+</ul>
+<p>The randomisation is balanced if the mean characteristics of each group are equal. For example, each group has the same gender split. If we have data available, we can run a "balance check" to confirm that the groups that were created are balanced.</p>
+<p>We check for balance to:</p>
+<ul>
+<li>Check that the assignment was properly randomised</li>
+<li>Confirm that as undesirable lack of balance has not been caused by chance.</li>
+</ul>
+<p>Randomisation occasionally leads to a large correlation between treatments and uncontrolled nuisance variables within a trial. For example, your control and intervention groups, by chance, may end up having people with higher incomes in one group than the other, or an unbalanced mix of sexes. If you are running only a small number of trials (often only one), this lack of balance can bias your results.</p>
+<p>The following excerpt gives an example where two groups in a field trial became unbalanced.</p>
+<blockquote style="background: #f9f9f9; margin: 25px 0px; padding: 15px 25px 15px 25px; border-left: 6px solid #ab2567;">
+<p>In 2012, we came up with a seemingly costless simple intervention: Get people to sign a tax or insurance audit form before they reported critical information (versus after, the common business practice).</p>
+<p>We ran studies showing that when people signed an honesty declaration before reporting information, they thought about how they were honest people, and were less likely to misreport compared to when they signed after they had filled out the form. While our original set of studies found that this intervention worked in the lab and in one field experiment, we no longer believe that signing before versus after is a simple costless fix. ...</p>
+<p>In an attempt to replicate and extend our original findings, three people on our team (Kristal, Whillans and Bazerman) found no evidence for the observed effects across five studies with 4,559 participants. We brought the original team together and reran an identical lab experiment from the original paper (Experiment 1). The only thing we changed was the sample size: we had 20 times more participants per condition. And we found no difference in the amount of cheating between signing at the top of the form and signing at the bottom.</p>
+<p>In light of these findings, we reanalyzed the field study in the original paper and became concerned with a failure of random assignment (such that the number of miles driven before the intervention was delivered was significantly different between the two groups). What we originally thought to be a reporting difference (between customers who signed at the top versus bottom of the form) now seems more likely to be a difference in actual driving behavior—not the honest or dishonest reporting of it.</p>
+<p><em>Kristal et al (2020)</em></p>
+</blockquote>
+<p>If the samples are not balanced, re-performing the randomisation is not considered good practice. Rather, you do stratified random assignment, or "blocking".</p>
+<p>The following table is an example of a balance check from Kirgios et al (2020). The characteristics of the members of each group are compared, with a statistical test to check that there is not a statistically significant difference in these characteristics.</p>
+<p><img src="$IMS-CC-FILEBASE$/Uploaded%20Media/kirgios-et-al-2020-table-1.png" alt="kirgios-et-al-2020-table-1.png" data-api-endpoint="https://canvas.uts.edu.au/api/v1/courses/25795/files/6397089" data-api-returntype="File" loading="lazy"></p>
+<p>Of note, the more characteristics against which you check for balance, it becomes increasingly likely that you will find an unbalanced characteristic simply by chance</p>
+</div>
+<div id="tab-2" style="font-size: 1rem; border: solid 1px #C7CDD1; border-width: 0px 1px 1px 1px;">
+<p>There are experimental designs that can reduce the effect of unbalanced groups. These work by holding a set of variables constant within a subset of trials (a "block" or "strata"). These variables are often called blocking variables.</p>
+<p>Stratified random assignment provides a way to ensure that our treatment and control groups are balanced on key variables.&nbsp;We first divide the pool of eligible units into strata. Within each stratum, we follow the procedure for simple random assignment.</p>
+<p>For example, suppose we are going to test discrimination in hiring by sending CVs in response to job ads. We believe that large and small firms will respond differently. We can split the firms into two blocks, small and large, and then randomise within each of those blocks. This will balance the small and large firms across the control and intervention groups and ensure we don't get an unbalanced experiment on that dimension.</p>
+<p>You should stratify when:</p>
+<ul>
+<li>We want to ensure balance in key characteristics (the smaller the sample size, the higher the chance that randomisation may return unbalanced groups)</li>
+<li>We want to increase statistical power. Stratifying on variables that are strong predictors of the outcome can increase statistical power.</li>
+<li>When we want to analyse treatment effect by subgroup.</li>
+</ul>
+<p>Which stratification variables should we use?</p>
+<ul>
+<li>Discrete variables (we cannot stratify on continuous variables like income and credit score, but we can create discrete groups such as income deciles)</li>
+<li>Variables that are highly correlated with the outcome of interest.&nbsp;If available, the baseline value of the outcome of interest is an important stratification variable.</li>
+<li>Variables on which we will do subgroup analysis (if we want to look at treatment effect by gender, we want balance on gender)</li>
+<li>We do not want to stratify on too many variables, or we may find we have strata with only one or no units in&nbsp;them.</li>
+</ul>
+</div>
+<div id="tab-3" style="font-size: 1rem; border: solid 1px #C7CDD1; border-width: 0px 1px 1px 1px;">
+<p>Most of the experiments we have discussed involve a "between-subject" design. The treatment and control groups comprise different subjects, with comparisons made between those subjects.</p>
+<p>An alternative is within-subject design, whereby experimental subjects make decisions in all treatments.</p>
+<p>Suppose we are working on increasing on-time credit card payments by sending a reminder. We might run the trial over two periods, sending a reminder to half the participants for the first payment period, and then a reminder to the other half in the second period. The control and treatment groups across the two periods are balanced as they contain the same people. This within-subjects design is called a crossover study, as participants cross over from one group to the other.</p>
+<p>Under a within-subject design, each subject is effectively their own control, meaning that we do not need to worry about the different characteristics of decision makers. Apart from avoiding unbalanced treatment and control groups, this means there is usually less variation in treatment effects, increasing the power of the experiment.</p>
+<p>A major disadvantage of a within-subject design is that there may be "order effects". The intervention in one period may flow into another period. There may be effects such as fatigue. The reverse order that participants receive the treatment in a "crossover" study, such as the example above, can be used to attempt to account for these order effects, although it complicates the analysis.</p>
+<p>Within-subject designs tend to be used where we have a limited number of experimental participants or are looking for efficiencies in the conduct of the experiment, as the design can increase power with fewer participants relative to a between-subjects design. You might also use it where you are interested in the longitudinal aspect of the interventions.</p>
+</div>
+</div>
+<p>&nbsp;</p>
+<div style="background-color: #f5f5f5; padding: 15px 30px;">
+<p><strong>References</strong></p>
+<p>Kirgios, Mandel, Park, Milkman, Gromet, Kay, and Duckworth (2020) "Teaching temptation bundling to boost exercise: A field experiment" <em>Organizational Behavior and Human Decision Processes</em>, 161, 20–35, <a href="https://doi.org/10.1016/j.obhdp.2020.09.003" target="_blank">https://doi.org/10.1016/j.obhdp.2020.09.003</a>&nbsp;</p>
+<p>Kristal et al. (2020) "When We’re Wrong, It’s Our Responsibility as Scientists to Say So", <em>Scientific American</em>, <a href="https://blogs.scientificamerican.com/observations/when-were-wrong-its-our-responsibility-as-scientists-to-say-so/">https://blogs.scientificamerican.com/observations/when-were-wrong-its-our-responsibility-as-scientists-to-say-so/</a></p>
+<p>List, Sadoff and Magner (2010) "So you want to run an experiment, now what? Some simple rules of thumb for optimal experimental design", <em>Experimental Economics</em>, <a href="https://doi.org/10.1007/s10683-011-9275-7">https://doi.org/10.1007/s10683-011-9275-7</a></p>
+</div>
+</body>
+</html>

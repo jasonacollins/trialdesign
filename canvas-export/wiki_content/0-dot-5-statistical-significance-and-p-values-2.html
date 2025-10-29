@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>0.5 Statistical significance and p-values</title>
+<meta name="identifier" content="g84d4e29321920739f3955281635e3e96"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p>&nbsp;</p>
+<div class="content-box">
+<div class="grid-row">
+<div class="col-xs-12 col-md-9">
+<div class="styleguide-section__grid-demo-element">
+<p>A commonly used decision rule utilised is "statistical significance". The null hypothesis is rejected (or the two hypotheses distinguished) if the result of the test is "statistically significant".</p>
+<p>An experiment will typically have a defined significance level, denoted by <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">, which is the probability that the experiment will reject the null hypothesis under the assumption that the null hypothesis is true. This is sometimes called a <em>false positive</em>.</p>
+<p><img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy"> is commonly set at 0.05. This means that 5% of the time the experiment will reject the null hypothesis (the hypothesis that there is no effect) even if there is actually no effect.</p>
+</div>
+</div>
+<div class="col-xs-12 col-md-3">
+<div class="styleguide-section__grid-demo-element">
+<div style="width: 100%;">
+<div style="position: relative; padding-bottom: 121.48%; padding-top: 0; height: 0;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/5f75301611b3400ffac86c6b" width="270" height="328" allowfullscreen="allowfullscreen" data-mce-fragment="1" loading="lazy"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2><span style="font-size: 24pt;">Testing for statistical significance</span></h2>
+<p>Let us return to our example of sending a letter to taxpayers to get them to submit their tax returns on time. 76% of people in the control group submitted on time, compared to 79% in the intervention group. There was a 3 percentage point difference between the two groups.</p>
+<p><span>You know that your estimate of the mean effect will vary by chance each time you measure it. The question you have is whether this mean effect of 3 percentage points represents a difference in the effectiveness of the treatments or just random variation in your measurements.</span></p>
+<div class="content-box">
+<div class="grid-row">
+<div class="col-xs-12 col-md-9">
+<div class="styleguide-section__grid-demo-element">
+<p>To answer this, you calculate a "test statistic". A test statistic summarises the deviation of the data from what you would expect if the null hypothesis is true.</p>
+<p>A commonly used test statistic in randomised controlled trials is the Z-score. The Z-score is a measure of how many standard deviations the effect size of the intervention is above or below zero. In our example, this is the difference in the two means divided by the standard error of that difference.</p>
+</div>
+</div>
+<div class="col-xs-12 col-md-3">
+<div class="styleguide-section__grid-demo-element">
+<div class="ic-flash-info" style="border-color: #7519d1; max-width: 100%; text-align: center;">
+<p>Where you are testing a difference in means, the Z-score is calculated as:</p>
+<p><img class="equation_image" title="Z=\frac{|\bar{x}_1-\bar{x}_0|}{s_{\bar{x}}}" src="https://canvas.uts.edu.au/equation_images/Z%253D%255Cfrac%257B%257C%255Cbar%257Bx%257D_1-%255Cbar%257Bx%257D_0%257C%257D%257Bs_%257B%255Cbar%257Bx%257D%257D%257D" alt="LaTeX: Z=\frac{|\bar{x}_1-\bar{x}_0|}{s_{\bar{x}}}" width="117" height="45" data-equation-content="Z=\frac{|\bar{x}_1-\bar{x}_0|}{s_{\bar{x}}}" loading="lazy"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>This Z-score is then compared against the normal distribution to see whether the Z-score exceeds the <strong>critical value</strong>.</p>
+<p>The critical value is effectively defined by <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">. It is the point on the distribution at which the areas of the distribution exceeding the (absolute value of the) critical value equal <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">. There should be only a probability of <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">&nbsp;that this critical value would be exceeded under the assumption that the null hypothesis is true.</p>
+<div class="content-box">
+<div class="grid-row">
+<div class="col-xs-12 col-md-8">
+<div class="styleguide-section__grid-demo-element">
+<p>The following diagram illustrates the critical value for <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">. The critical value for <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy"> = 0.05 with a normal distribution is 1.96. The shaded area is 5% of the area under the curve.</p>
+<div style="width: 100%;">
+<div style="position: relative; padding-bottom: 52.94%; padding-top: 0; height: 0;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/5f72b5585847651007ca8e98" width="850" height="450" allowfullscreen="allowfullscreen" loading="lazy"></iframe></div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-md-4">
+<div class="styleguide-section__grid-demo-element">
+<p>As a technical note, if you know the standard deviation in the underlying population, you use a normal distribution. If you don't know the standard deviation in the underlying population, you use Student's t-distribution. If the sample size is large, the t-distribution approximates the normal distribution. It is normally better practice to use the t-distribution, but it's also good practice to use a sample size large enough that the difference between the normal and t-distribution are negligible. This is why when reading experiments you will often read about t-scores and t-tests.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-box">
+<div class="grid-row">
+<div class="col-xs-12 col-md-7">
+<div class="styleguide-section__grid-demo-element">
+<h3><span style="font-size: 18pt;">What is a p-value?</span></h3>
+<p>Statistical significance is often communicated using the concept of a p-value. P-values are one of the most widely used and poorly understood concepts in statistics.</p>
+<p>A p-value is the probability of obtaining experimental data at least as extreme as the data actually observed, on the assumption that the null hypothesis is correct. A low p-value means that you would have been unlikely to observe those data if the null hypothesis was true.</p>
+<p>A p-value is calculated by asking, given the test statistic that we have calculated, what the lowest possible level of <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">&nbsp;is for which we would still reject the null hypothesis. This means that if the p-value is below <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" data-equation-content="\alpha" loading="lazy"> (typically 0.05) we reject the null hypothesis.</p>
+</div>
+</div>
+<div class="col-xs-12 col-md-5">
+<div class="styleguide-section__grid-demo-element">
+<div class="border-round" style="border: 1px solid #413498; border-top: 6px solid #413498; padding: 5px 25px 10px 25px; margin: 20px 0px 20px 0px;">
+<p><span style="font-size: 14pt;"><strong>Watch&nbsp;</strong> <span class="pill" style="font-size: 10pt;">&nbsp; 5 minutes&nbsp;&nbsp;</span> </span></p>
+<hr>
+<p>Here is a short video about P-values!</p>
+<p><iframe style="width: 380px; height: 290px;" title="P-value in statistics: Understanding the p-value and what it tells us - Statistics Help" src="https://www.youtube-nocookie.com/embed/eyknGvncKLw?feature=oembed&amp;rel=0" width="320" height="240" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autoplay *" loading="lazy"></iframe></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3><span style="font-size: 18pt;">Confidence intervals</span></h3>
+<p>Another way of testing for statistical significance is to construct a confidence interval around the parameter in question. If <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">=0.05, a 95% confidence interval (1- <img class="equation_image" title="\alpha" src="https://canvas.uts.edu.au/equation_images/%255Calpha" alt="LaTeX: \alpha" width="20" height="23" data-equation-content="\alpha" loading="lazy">) that excludes zero will lead you to reject the null hypothesis.</p>
+<h3><span style="font-size: 14pt;">A final note</span></h3>
+<p>There are a lot of complications and permutations in the above approaches where assumptions are tweaked, the variables are continuous or discrete, we use different probability distributions and so on. This flows through to the approach and formulas. As a result, don't take this as the definitive approach. Rather, understand the intuition behind what we are trying to do, as that intuition is common across most approaches.</p>
+</body>
+</html>

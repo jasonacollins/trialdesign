@@ -1,0 +1,15 @@
+{
+  "hash": "7c313bf3bce01f312dee9562fc27594c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# How can randomisation help?\n\nParticipants and non-participants are chosen at random.\n\nThere is no reason, other than chance, that they are selected into the program. On average, participants and non-participants have the same characteristics. They would, on average, have the same outcomes. \n\nAny difference at the end is due to the program (or chance, to which we will return).\n\n![](img/TLA_Figure_3.jpg)\n\n*Figure from @haynes2012*\n\nRandomisation avoids the need for a detailed understanding of the mechanism underlying the difference in outcomes between groups. James Lind conducted what many considered to be the first clinical trial in 1747 when he gave six scurvy stricken sailors citrus juice, while denying the treatment to another six. He did not need to know that vitamin C was the mechanism, nor anything about human biology to see if it worked.\n\n**Question**\n\nA firm provides well-being training to all employees interested. At the end of the program, employees who participated in the program had lower stress levels than those who did not participate in the program.\n\nCan you conclude from these data that the program was effective in reducing stress?\n\n\n::: {.cell}\n\n:::\n\n\n<div class='webex-radiogroup' id='radio_JXNRMBHLNV'><label><input type=\"radio\" autocomplete=\"off\" name=\"radio_JXNRMBHLNV\" value=\"\"></input> <span>Yes because those who participated had lower stress level.</span></label><label><input type=\"radio\" autocomplete=\"off\" name=\"radio_JXNRMBHLNV\" value=\"answer\"></input> <span>No, because employees who participated may have had lower stress level before the program already.</span></label></div>\n\n\n\n<div class='webex-solution'><button>Click here to see an explanation</button>\n\n\nAs you did not randomise and control access, employees who participated may have had lower stress levels before the program.\n\n\n</div>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
