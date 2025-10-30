@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>40&nbsp; Statistical power – Course notes on trial design</title>
+<title>29&nbsp; Statistical power – Course notes on trial design</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-1ee7fb08bd24cb293f77f2e00fc4ba75.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,12 +120,20 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
-<meta property="og:title" content="40&nbsp; Statistical power – Course notes on trial design">
+<meta property="og:title" content="29&nbsp; Statistical power – Course notes on trial design">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://trialdesign.jasoncollins.blog/statistical-power/img/sample-size-1.png">
 <meta property="og:site_name" content="Course notes on trial design">
-<meta name="twitter:title" content="40&nbsp; Statistical power – Course notes on trial design">
+<meta property="og:image:alt" content="Baseline: The null hypothesis (H₀) and alternative hypothesis (H₁) distributions with a critical value between them. The grey area shows Type II error (failing to reject the null when the alternative is true), and the purple area shows Type I error (rejecting the null when it is true).">
+<meta property="og:image:height" content="1128">
+<meta property="og:image:width" content="2880">
+<meta name="twitter:title" content="29&nbsp; Statistical power – Course notes on trial design">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://trialdesign.jasoncollins.blog/statistical-power/img/sample-size-1.png">
+<meta name="twitter:image:alt" content="Baseline: The null hypothesis (H₀) and alternative hypothesis (H₁) distributions with a critical value between them. The grey area shows Type II error (failing to reject the null when the alternative is true), and the purple area shows Type I error (rejecting the null when it is true).">
+<meta name="twitter:image-height" content="1128">
+<meta name="twitter:image-width" content="2880">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -164,7 +175,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/statistical-power-content.html"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/statistical-power-content.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -274,44 +285,20 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/partial-compliance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Partial compliance</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/attrition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Attrition</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/spillovers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Spillovers</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/evaluation-driven-effects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Evaluation-driven effects</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../before-the-trial/develop-the-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/program-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/design-and-select-an-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
   </div>
 </li>
       </ul>
@@ -328,115 +315,73 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/steps-in-a-randomised-trial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/define-the-outcome-measure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-outcome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Level of outcome</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/random-sample-versus-random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Random sample versus random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/what-can-be-randomised.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">What can be randomised?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/opportunities-to-randomise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Opportunities to randomise</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-randomisation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Level of randomisation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/three-research-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Three research designs</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/randomisation-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Randomisation techniques</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-collection-plan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/pilot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/trial-implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/an-example-data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/threats-to-the-integrity-of-the-experiment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/alternative-trial-design-processes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/scaling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/ethical-principles-for-trial-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
   </div>
 </li>
       </ul>
@@ -453,37 +398,37 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-and-type-ii-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-error-control.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/statistical-power-content.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/power-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/an-example-power-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
   </div>
 </li>
       </ul>
@@ -500,73 +445,67 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/navigating-the-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interpreting-trial-results/reading-research.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Reading research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/the-replication-crisis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/replication-and-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/publication-bias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/p-hacking-and-the-garden-of-forking-paths.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/pre-analysis-plans-and-preregistration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/type-m-and-type-s-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/validity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-context.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/heterogeneity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
   </div>
 </li>
       </ul>
@@ -587,17 +526,17 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#calculating-power" id="toc-calculating-power" class="nav-link active" data-scroll-target="#calculating-power"><span class="header-section-number">40.1</span> Calculating power</a></li>
-  <li><a href="#optional-reading" id="toc-optional-reading" class="nav-link" data-scroll-target="#optional-reading"><span class="header-section-number">40.2</span> Optional reading</a></li>
+  <li><a href="#calculating-power" id="toc-calculating-power" class="nav-link active" data-scroll-target="#calculating-power"><span class="header-section-number">29.1</span> Calculating power</a></li>
+  <li><a href="#optional-reading" id="toc-optional-reading" class="nav-link" data-scroll-target="#optional-reading"><span class="header-section-number">29.2</span> Optional reading</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jasonacollins/trialdesign/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/statistical-power-content.html"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/statistical-power-content.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></h1>
+<h1 class="title"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></h1>
 </div>
 
 
@@ -617,8 +556,8 @@ window.Quarto = {
 <p>The probability of a Type II error is <span class="math inline">\beta</span>, the probability that you will not reject the null hypothesis when it is false.</p>
 <p>A related concept is power, which is the probability that you will <em>reject</em> the null hypothesis when it is false. Power is equal to 1 - <span class="math inline">\beta</span>.</p>
 <p>Questions related to the Type II error rate for a trial are typically framed in terms of power. How can I design my trial so that it has enough power to reject the null hypothesis in circumstances where it is not true? Alternatively, how can I increase the probability that my trial will achieve statistical significance when the null hypothesis is not true?</p>
-<section id="calculating-power" class="level2" data-number="40.1">
-<h2 data-number="40.1" class="anchored" data-anchor-id="calculating-power"><span class="header-section-number">40.1</span> Calculating power</h2>
+<section id="calculating-power" class="level2" data-number="29.1">
+<h2 data-number="29.1" class="anchored" data-anchor-id="calculating-power"><span class="header-section-number">29.1</span> Calculating power</h2>
 <p>Statistical power can be calculated with the following variables:</p>
 <p><strong>The significance level</strong>: The stricter the significance level that you use in your experiment, the lower the power of the experiment. There is a trade-off between Type I and Type II errors. As you decrease the probability of false positives by using a stricter significance level, you also decrease the probability of true positives. You should not relax the significance level to achieve power, but should be aware of the consequences of making it more strict.</p>
 <p><strong>The effect size</strong>: What is the magnitude of the effect of your intervention? The larger the effect size, the more power the experiment has to detect an effect and generate a statistically significant outcome.</p>
@@ -628,13 +567,44 @@ window.Quarto = {
 <p>As a result, when an effect size estimate is made, it it typically made as a standardised effect size. This is the magnitude of the effect divided by the standard deviation. How many standard deviations is the effect?</p>
 <p>You don’t have the ability to increase the effect size. However, variation in the effect size is affected by things such as measurement error. More precise measurement can increase power.</p>
 <p><strong>The sample size</strong>: Power is a function of the sample size of the experiment. It is the factor over which you have the most control.</p>
-<p>Increasing the sample size reduces the standard error of your estimated effect size. This means that, if the alternative hypothesis is true, you will have a greater probability of detecting an effect of any given size. This can be seen in the following diagram: a larger sample size results in lower standard error, which is reflected in a narrower probability distribution for your estimate.</p>
-<p>[ADD GRAPHIC OF NORMAL DISTRIBUTION GETTING NARROWER]</p>
+<p>Increasing the sample size reduces the standard error of your estimated effect size. This means that, if the alternative hypothesis is true, you will have a greater probability of detecting an effect of any given size. The following diagrams illustrate how sample size affects the probability distributions and Type II error:</p>
+<div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><strong>Baseline:</strong> The null hypothesis (H₀) and alternative hypothesis (H₁) distributions with a critical value between them. The grey area shows Type II error (failing to reject the null when the alternative is true), and the purple area shows Type I error (rejecting the null when it is true).</figcaption>
+<p><a href="img/sample-size-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Baseline: The null hypothesis (H₀) and alternative hypothesis (H₁) distributions with a critical value between them. The grey area shows Type II error (failing to reject the null when the alternative is true), and the purple area shows Type I error (rejecting the null when it is true)."><img src="img/sample-size-1.png" class="img-fluid figure-img" alt="Baseline: The null hypothesis (H₀) and alternative hypothesis (H₁) distributions with a critical value between them. The grey area shows Type II error (failing to reject the null when the alternative is true), and the purple area shows Type I error (rejecting the null when it is true)."></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><strong>Larger sample size:</strong> A larger sample size reduces the standard error, making the null hypothesis distribution narrower. This reduces the Type II error region (grey area), increasing the power of the test.</figcaption>
+<p><a href="img/sample-size-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Larger sample size: A larger sample size reduces the standard error, making the null hypothesis distribution narrower. This reduces the Type II error region (grey area), increasing the power of the test."><img src="img/sample-size-2.png" class="img-fluid figure-img" alt="Larger sample size: A larger sample size reduces the standard error, making the null hypothesis distribution narrower. This reduces the Type II error region (grey area), increasing the power of the test."></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><strong>Smaller sample size:</strong> A smaller sample size increases the standard error, making the distribution wider. This increases the Type II error region (grey area), decreasing the power of the test.</figcaption>
+<p><a href="img/sample-size-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Smaller sample size: A smaller sample size increases the standard error, making the distribution wider. This increases the Type II error region (grey area), decreasing the power of the test."><img src="img/sample-size-3.png" class="img-fluid figure-img" alt="Smaller sample size: A smaller sample size increases the standard error, making the distribution wider. This increases the Type II error region (grey area), decreasing the power of the test."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <p>Beyond increasing power, larger samples have other benefits such as reducing the extent to which we overestimate the effect size. We will discuss this more in coming material.</p>
 <p>Power is calculated by asking, given the critical value implied by the chosen significance level, what effect size is required such that 80% of the probability distribution for the estimated effect size will be above the critical value.</p>
 </section>
-<section id="optional-reading" class="level2" data-number="40.2">
-<h2 data-number="40.2" class="anchored" data-anchor-id="optional-reading"><span class="header-section-number">40.2</span> Optional reading</h2>
+<section id="optional-reading" class="level2" data-number="29.2">
+<h2 data-number="29.2" class="anchored" data-anchor-id="optional-reading"><span class="header-section-number">29.2</span> Optional reading</h2>
 <p>Schimmack (2017) “Reconstruction of a Train Wreck: How Priming Research Went Off the Rails”, <em>Replicability-Index</em>, https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/ (Note Daniel Kahneman’s <a href="https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/comment-page-1/#comment-1454">response in the comments</a>.)</p>
 
 
@@ -1255,12 +1225,12 @@ window.onload = function() {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../statistical-power/type-i-error-control.html" class="pagination-link" aria-label="Type I error control">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type I error control</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Type I error control</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../statistical-power/power-analysis.html" class="pagination-link" aria-label="Power analysis">
-        <span class="nav-page-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1284,6 +1254,38 @@ window.onload = function() {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

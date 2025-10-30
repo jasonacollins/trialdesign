@@ -16,8 +16,5 @@ Glennerster and Takavarasha (2013) describe their methods of assessing operation
 >
 > **Assessing operations in the field.** A paper review should ideally be accompanied by some on-the-ground checking. The records may say that the attendance rate at a new school is high, but a good process evaluation will check the records against reality. A small number of random visits will quickly tell us whether the paper records are accurate and, if not, how great the gap is between the records and reality. We should also interview beneficiaries to hear their side of the story. Are they using the new school? How do they find it?
 >
-> *Glennerster and Takavarasha (2013)*
+> *@glennerster2013*
 
-## References
-
-Glennerster and Takavarasha (2013) "[Asking the Right Questions](https://doi-org.ezproxy.lib.uts.edu.au/10.2307/j.ctt4cgd52.7)" in *Running Randomized Evaluations: A Practical Guide* (pp. 66–97). Princeton University Press.

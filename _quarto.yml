@@ -5,7 +5,7 @@ book:
   title: "Course notes on trial design"
   site-url: https://trialdesign.jasoncollins.blog
   author: "Jason Collins"
-  date: "18 June 2025"
+  date: "30 October 2025"
   date-format: D MMMM YYYY
   chapters:
     - index.qmd
@@ -24,10 +24,6 @@ book:
       chapters:
         - before-the-trial/organisational-buy-in.md
         - before-the-trial/define-and-diagnose-the-problem.md
-        - before-the-trial/partial-compliance.md
-        - before-the-trial/attrition.md
-        - before-the-trial/spillovers.md
-        - before-the-trial/evaluation-driven-effects.md
         - before-the-trial/develop-the-intervention.md
         - before-the-trial/program-theory.md
         - before-the-trial/design-and-select-an-intervention.md
@@ -35,14 +31,7 @@ book:
       chapters:
         - running-a-trial/steps-in-a-randomised-trial.md
         - running-a-trial/define-the-outcome-measure.md
-        - running-a-trial/level-of-outcome.md
         - running-a-trial/random-assignment.qmd
-        - running-a-trial/random-sample-versus-random-assignment.md
-        - running-a-trial/what-can-be-randomised.md
-        - running-a-trial/opportunities-to-randomise.md
-        - running-a-trial/level-of-randomisation.md
-        - running-a-trial/three-research-designs.md
-        - running-a-trial/randomisation-techniques.md
         - running-a-trial/data-collection-plan.md
         - running-a-trial/pilot.md
         - running-a-trial/trial-implementation.md
@@ -63,7 +52,6 @@ book:
     - part: interpreting-trial-results/interpreting-trial-results.md
       chapters:
         - interpreting-trial-results/navigating-the-literature.md
-        - interpreting-trial-results/reading-research.md
         - interpreting-trial-results/the-replication-crisis.md
         - interpreting-trial-results/replication-and-reproducibility.md
         - interpreting-trial-results/publication-bias.md

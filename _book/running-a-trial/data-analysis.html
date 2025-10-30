@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>32&nbsp; Data analysis – Course notes on trial design</title>
+<title>21&nbsp; Data analysis – Course notes on trial design</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -77,13 +97,13 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
-<meta property="og:title" content="32&nbsp; Data analysis – Course notes on trial design">
+<meta property="og:title" content="21&nbsp; Data analysis – Course notes on trial design">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://trialdesign.jasoncollins.blog/running-a-trial/img/UK-screenshot-768x517.png">
 <meta property="og:site_name" content="Course notes on trial design">
 <meta property="og:image:height" content="517">
 <meta property="og:image:width" content="768">
-<meta name="twitter:title" content="32&nbsp; Data analysis – Course notes on trial design">
+<meta name="twitter:title" content="21&nbsp; Data analysis – Course notes on trial design">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://trialdesign.jasoncollins.blog/running-a-trial/img/UK-screenshot-768x517.png">
 <meta name="twitter:image-height" content="517">
@@ -130,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/data-analysis.html"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/data-analysis.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Data analysis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -240,44 +260,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/partial-compliance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Partial compliance</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/attrition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Attrition</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/spillovers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Spillovers</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/evaluation-driven-effects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Evaluation-driven effects</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../before-the-trial/develop-the-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/program-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/design-and-select-an-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
   </div>
 </li>
       </ul>
@@ -294,115 +290,73 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/steps-in-a-randomised-trial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/define-the-outcome-measure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-outcome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Level of outcome</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/random-sample-versus-random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Random sample versus random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/what-can-be-randomised.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">What can be randomised?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/opportunities-to-randomise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Opportunities to randomise</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-randomisation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Level of randomisation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/three-research-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Three research designs</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/randomisation-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Randomisation techniques</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-collection-plan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/pilot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/trial-implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-analysis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/an-example-data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/threats-to-the-integrity-of-the-experiment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/alternative-trial-design-processes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/scaling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/ethical-principles-for-trial-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
   </div>
 </li>
       </ul>
@@ -419,37 +373,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-and-type-ii-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-error-control.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/statistical-power-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/power-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/an-example-power-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
   </div>
 </li>
       </ul>
@@ -466,73 +420,67 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/navigating-the-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interpreting-trial-results/reading-research.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Reading research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/the-replication-crisis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/replication-and-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/publication-bias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/p-hacking-and-the-garden-of-forking-paths.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/pre-analysis-plans-and-preregistration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/type-m-and-type-s-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/validity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-context.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/heterogeneity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
   </div>
 </li>
       </ul>
@@ -553,18 +501,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-involved" id="toc-what-is-involved" class="nav-link active" data-scroll-target="#what-is-involved"><span class="header-section-number">32.1</span> What is involved</a></li>
-  <li><a href="#preparing-the-data" id="toc-preparing-the-data" class="nav-link" data-scroll-target="#preparing-the-data"><span class="header-section-number">32.2</span> Preparing the data</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">32.3</span> References</a></li>
+  <li><a href="#what-is-involved" id="toc-what-is-involved" class="nav-link active" data-scroll-target="#what-is-involved"><span class="header-section-number">21.1</span> What is involved</a></li>
+  <li><a href="#preparing-the-data" id="toc-preparing-the-data" class="nav-link" data-scroll-target="#preparing-the-data"><span class="header-section-number">21.2</span> Preparing the data</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jasonacollins/trialdesign/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/data-analysis.html"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../running-a-trial/running-a-trial.html">Running a trial</a></li><li class="breadcrumb-item"><a href="../running-a-trial/data-analysis.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Data analysis</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Data analysis</span></h1>
 </div>
 
 
@@ -582,8 +529,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Once the program has been implemented and you have completed the data collection, you need to analyse these data.</p>
-<section id="what-is-involved" class="level2" data-number="32.1">
-<h2 data-number="32.1" class="anchored" data-anchor-id="what-is-involved"><span class="header-section-number">32.1</span> What is involved</h2>
+<section id="what-is-involved" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="what-is-involved"><span class="header-section-number">21.1</span> What is involved</h2>
 <p><strong>Compare outcomes for treatment group and control group</strong></p>
 <p>This is typically straightforward because you have randomised people into a treatment and a control group.</p>
 <p><strong>Conduct possible heterogeneity analysis</strong></p>
@@ -592,8 +539,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Be aware of data mining when there are many outcomes</strong></p>
 <p>If you have many outcomes, you may find a treatment effect only for a few but not consistently for all of them. One needs to be careful not to search too much for an effect that does not exist. Researchers and practitioners now often register a pre-analysis plan for their trial.</p>
 </section>
-<section id="preparing-the-data" class="level2" data-number="32.2">
-<h2 data-number="32.2" class="anchored" data-anchor-id="preparing-the-data"><span class="header-section-number">32.2</span> Preparing the data</h2>
+<section id="preparing-the-data" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="preparing-the-data"><span class="header-section-number">21.2</span> Preparing the data</h2>
 <p>Before we start any analysis, we prepare (or “clean”) the data to ensure we understand their properties. We might:</p>
 <ul>
 <li>Correct any errors in the data. Surveys should have consistency checks built in. However, we should not “overclean” the data.</li>
@@ -603,7 +550,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Plot and describe the data. Exploring the data before formal statistical analysis is useful to uncover problems in the data and understand better the results.</li>
 </ul>
 <p>One illustration of the importance of examining the data visually and descriptively relates to Shu et al.&nbsp;(2012). They reported that “signing before—rather than after—the opportunity to cheat makes ethics salient when they are needed most and significantly reduces dishonesty.” The paper contained the results of a field experiment whereby applicants for vehicle insurance reported higher mileage and incurred higher premiums when they signed at the top.</p>
-<p>Anonymous authors (2021) on <em>Data Colada</em> examined the data and wrote:</p>
+<p><span class="citation" data-cites="anonymous2021">Anonymous (<a href="../references.html#ref-anonymous2021" role="doc-biblioref">2021</a>)</span> on <em>Data Colada</em> examined the data and wrote:</p>
 <blockquote class="blockquote">
 <p>Let’s first think about what the distribution of miles driven should look like. If there were about a year separating the Time 1 and Time 2 mileages, we might expect something like the figure below, taken from the UK Department of Transportation (.pdf) based on similar data (two consecutive odometer readings) collected in 2010:</p>
 </blockquote>
@@ -613,15 +560,20 @@ ul.task-list li input[type="checkbox"] {
 <p>As noted by the authors of the 2012 paper, it is unknown how much time elapsed between the baseline period (Time 1) and their experiment (Time 2), and it was reportedly different for different customers [3]. For some customers the “miles driven” measure may reflect a 2-year period, while for others it may be considerably more or less than that [4]. It is therefore hard to know what the distribution of miles driven should look like in those data. It is not hard, however, to know what it should not look like. It should not look like this:</p>
 </blockquote>
 <p><a href="img/F1-Uniform-change-2021-07-03-768x473.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/F1-Uniform-change-2021-07-03-768x473.png" class="img-fluid"></a></p>
-<p>The data had been fraudulently generated. However, during the original analysis by Shu et al.&nbsp;(2012) and a review of the data by Kristal et al.&nbsp;(2020), nobody had picked this up as (likely) no one had done a simple plot.</p>
-</section>
-<section id="references" class="level2" data-number="32.3">
-<h2 data-number="32.3" class="anchored" data-anchor-id="references"><span class="header-section-number">32.3</span> References</h2>
-<p>Anonymous (2021) “[98] Evidence of Fraud in an Influential Field Experiment About Dishonesty.” <em>Data Colada</em>. August 17, 2021. http://datacolada.org/98</p>
-<p>Kristal et al.&nbsp;(2020) “Signing at the beginning versus at the end does not decrease dishonesty”, PNAS, 117(13), 7103-7107, https://doi.org/10.1073/pnas.1911695117</p>
-<p>Shu et al.&nbsp;(2012) “Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end”, <em>PNAS</em>, 109(38), https://doi.org/10.1073/pnas.1209746109</p>
+<p>The data had been fraudulently generated. However, during the original analysis by <span class="citation" data-cites="shu2012">Shu et al. (<a href="../references.html#ref-shu2012" role="doc-biblioref">2012</a>)</span> and a review of the data by <span class="citation" data-cites="kristal2020">Kristal et al. (<a href="../references.html#ref-kristal2020" role="doc-biblioref">2020</a>)</span>, nobody had picked this up as (likely) no one had done a simple plot.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-anonymous2021" class="csl-entry" role="listitem">
+Anonymous. (2021). [98] evidence of fraud in an influential field experiment about dishonesty. <em>Data Colada</em>. <a href="http://datacolada.org/98">http://datacolada.org/98</a>
+</div>
+<div id="ref-kristal2020" class="csl-entry" role="listitem">
+Kristal, A. S., Whillans, A. V., Bazerman, M. H., Gino, F., Shu, L. L., Mazar, N., and Ariely, D. (2020). Signing at the beginning versus at the end does not decrease dishonesty. <em>Proceedings of the National Academy of Sciences</em>, <em>117</em>(13), 7103–7107. <a href="https://doi.org/10.1073/pnas.1911695117">https://doi.org/10.1073/pnas.1911695117</a>
+</div>
+<div id="ref-shu2012" class="csl-entry" role="listitem">
+Shu, L. L., Mazar, N., Gino, F., Ariely, D., and Bazerman, M. H. (2012). Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end. <em>Proceedings of the National Academy of Sciences</em>, <em>109</em>(38), 15197–15200. <a href="https://doi.org/10.1073/pnas.1209746109">https://doi.org/10.1073/pnas.1209746109</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -1239,12 +1191,12 @@ window.onload = function() {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../running-a-trial/trial-implementation.html" class="pagination-link" aria-label="Trial implementation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Trial implementation</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Trial implementation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../running-a-trial/an-example-data-analysis.html" class="pagination-link" aria-label="An example data analysis">
-        <span class="nav-page-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">An example data analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">An example data analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

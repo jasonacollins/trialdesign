@@ -10,4 +10,4 @@ During the experiment, researchers can change features of the environment, such 
 
 In 2002, Vernon Smith won the Nobel Prize in Economics for "having established laboratory experiments as a tool in empirical economic analysis, especially in the study of alternative market mechanisms."
 
-<iframe style="width: 640px; height: 480px;" title="Vernon Smith - Experimental Markets.m4v" src="https://www.youtube-nocookie.com/embed/Uncl-wRfoK8?feature=oembed&amp;rel=0" width="640" height="480" loading="lazy" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autoplay *"></iframe>
+{{< video https://www.youtube-nocookie.com/embed/Uncl-wRfoK8 >}}

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://trialdesign.jasoncollins.blog/index.html</loc>
-    <lastmod>2025-06-18T06:00:22.000Z</lastmod>
+    <lastmod>2025-10-29T22:52:50.124Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/experimental-foundations/experimental-foundations.html</loc>
-    <lastmod>2025-06-20T00:38:27.000Z</lastmod>
+    <lastmod>2025-10-29T21:04:50.687Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/experimental-foundations/why-experiment.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/experimental-foundations/the-experimental-approach-in-economics-and-psychology.html</loc>
-    <lastmod>2025-06-20T00:54:08.000Z</lastmod>
+    <lastmod>2025-10-29T21:14:25.496Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/experimental-foundations/the-role-of-experiments.html</loc>
@@ -57,28 +57,12 @@
     <lastmod>2025-06-20T11:21:42.000Z</lastmod>
   </url>
   <url>
-    <loc>https://trialdesign.jasoncollins.blog/before-the-trial/partial-compliance.html</loc>
-    <lastmod>2025-10-29T10:46:09.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/before-the-trial/attrition.html</loc>
-    <lastmod>2025-10-29T10:46:28.842Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/before-the-trial/spillovers.html</loc>
-    <lastmod>2025-10-29T10:46:47.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/before-the-trial/evaluation-driven-effects.html</loc>
-    <lastmod>2025-10-29T10:47:07.665Z</lastmod>
-  </url>
-  <url>
     <loc>https://trialdesign.jasoncollins.blog/before-the-trial/develop-the-intervention.html</loc>
     <lastmod>2025-07-01T07:32:17.000Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/before-the-trial/program-theory.html</loc>
-    <lastmod>2025-10-29T10:47:43.933Z</lastmod>
+    <lastmod>2025-10-30T00:05:26.221Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/before-the-trial/design-and-select-an-intervention.html</loc>
@@ -94,71 +78,43 @@
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/define-the-outcome-measure.html</loc>
-    <lastmod>2025-07-01T10:14:57.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/running-a-trial/level-of-outcome.html</loc>
-    <lastmod>2025-10-29T10:19:14.208Z</lastmod>
+    <lastmod>2025-10-29T22:41:47.253Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/random-assignment.html</loc>
-    <lastmod>2025-07-01T11:02:34.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/running-a-trial/random-sample-versus-random-assignment.html</loc>
-    <lastmod>2025-10-29T10:20:43.895Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/running-a-trial/what-can-be-randomised.html</loc>
-    <lastmod>2025-10-29T10:26:16.856Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/running-a-trial/opportunities-to-randomise.html</loc>
-    <lastmod>2025-10-29T10:26:40.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/running-a-trial/level-of-randomisation.html</loc>
-    <lastmod>2025-10-29T10:27:10.139Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/running-a-trial/three-research-designs.html</loc>
-    <lastmod>2025-10-29T10:27:27.335Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/running-a-trial/randomisation-techniques.html</loc>
-    <lastmod>2025-10-29T10:28:31.021Z</lastmod>
+    <lastmod>2025-10-29T22:18:17.423Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/data-collection-plan.html</loc>
-    <lastmod>2025-10-29T10:30:06.241Z</lastmod>
+    <lastmod>2025-10-29T22:21:31.317Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/pilot.html</loc>
-    <lastmod>2025-10-29T10:30:21.300Z</lastmod>
+    <lastmod>2025-10-29T22:07:07.902Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/trial-implementation.html</loc>
-    <lastmod>2025-10-29T10:30:40.365Z</lastmod>
+    <lastmod>2025-10-29T22:21:59.890Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/data-analysis.html</loc>
-    <lastmod>2025-10-29T10:31:17.831Z</lastmod>
+    <lastmod>2025-10-29T22:19:10.513Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/an-example-data-analysis.html</loc>
-    <lastmod>2025-10-29T19:18:37.907Z</lastmod>
+    <lastmod>2025-10-30T00:18:15.721Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/threats-to-the-integrity-of-the-experiment.html</loc>
-    <lastmod>2025-10-29T10:33:17.736Z</lastmod>
+    <lastmod>2025-10-29T22:46:38.788Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/alternative-trial-design-processes.html</loc>
-    <lastmod>2025-06-19T07:23:30.000Z</lastmod>
+    <lastmod>2025-10-30T00:09:38.074Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/scaling.html</loc>
-    <lastmod>2025-10-29T10:33:53.437Z</lastmod>
+    <lastmod>2025-10-30T00:21:57.979Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/running-a-trial/ethical-principles-for-trial-design.html</loc>
@@ -174,23 +130,23 @@
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/statistical-power/type-i-error-control.html</loc>
-    <lastmod>2025-10-29T10:08:22.280Z</lastmod>
+    <lastmod>2025-10-29T22:28:51.809Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/statistical-power/statistical-power-content.html</loc>
-    <lastmod>2025-10-29T10:08:52.819Z</lastmod>
+    <lastmod>2025-10-30T00:35:48.478Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/statistical-power/power-analysis.html</loc>
-    <lastmod>2025-10-29T10:09:27.699Z</lastmod>
+    <lastmod>2025-10-30T00:37:42.390Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/statistical-power/an-example-power-analysis.html</loc>
-    <lastmod>2025-10-29T10:11:58.366Z</lastmod>
+    <lastmod>2025-10-29T22:25:52.378Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/statistical-power/effect-sizes.html</loc>
-    <lastmod>2025-10-29T10:10:55.561Z</lastmod>
+    <lastmod>2025-10-29T22:39:56.681Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/interpreting-trial-results/interpreting-trial-results.html</loc>
@@ -199,10 +155,6 @@
   <url>
     <loc>https://trialdesign.jasoncollins.blog/interpreting-trial-results/navigating-the-literature.html</loc>
     <lastmod>2025-10-29T09:59:49.137Z</lastmod>
-  </url>
-  <url>
-    <loc>https://trialdesign.jasoncollins.blog/interpreting-trial-results/reading-research.html</loc>
-    <lastmod>2025-10-29T09:59:40.102Z</lastmod>
   </url>
   <url>
     <loc>https://trialdesign.jasoncollins.blog/interpreting-trial-results/the-replication-crisis.html</loc>

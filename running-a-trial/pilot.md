@@ -8,6 +8,4 @@ Although not essential, it is often a good idea to conduct a formal pilot of the
 
 If you would like to know more, read [The role and interpretation of pilot studies in impact evaluation research](https://3ieimpact.org/sites/default/files/2019-02/3ie-dss-september-shagun.pdf) by Shagun Sabarwa. The case study underlines the importance of having broad pilot studies in informing the causal hypothesis, study design, key variables of interest measurement and finally the decision of whether or not to proceed with a randomised evaluation.
 
-## References
-
-Glennerster, R., & Takavarasha, K. (2013). [The Experimental Approach](https://doi-org.ezproxy.lib.uts.edu.au/10.2307/j.ctt4cgd52.5). *Running Randomized Evaluations: A Practical Guide* (pp. 1–23). Princeton University Press.
+For more information, see @glennerster2013f.

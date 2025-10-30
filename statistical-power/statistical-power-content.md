@@ -26,9 +26,15 @@ You don't have the ability to increase the effect size. However, variation in th
 
 **The sample size**: Power is a function of the sample size of the experiment. It is the factor over which you have the most control.
 
-Increasing the sample size reduces the standard error of your estimated effect size. This means that, if the alternative hypothesis is true, you will have a greater probability of detecting an effect of any given size. This can be seen in the following diagram: a larger sample size results in lower standard error, which is reflected in a narrower probability distribution for your estimate.
+Increasing the sample size reduces the standard error of your estimated effect size. This means that, if the alternative hypothesis is true, you will have a greater probability of detecting an effect of any given size. The following diagrams illustrate how sample size affects the probability distributions and Type II error:
 
-[ADD GRAPHIC OF NORMAL DISTRIBUTION GETTING NARROWER]
+::: {layout-ncol=1}
+![**Baseline:** The null hypothesis (H₀) and alternative hypothesis (H₁) distributions with a critical value between them. The grey area shows Type II error (failing to reject the null when the alternative is true), and the purple area shows Type I error (rejecting the null when it is true).](img/sample-size-1.png)
+
+![**Larger sample size:** A larger sample size reduces the standard error, making the null hypothesis distribution narrower. This reduces the Type II error region (grey area), increasing the power of the test.](img/sample-size-2.png)
+
+![**Smaller sample size:** A smaller sample size increases the standard error, making the distribution wider. This increases the Type II error region (grey area), decreasing the power of the test.](img/sample-size-3.png)
+:::
 
 Beyond increasing power, larger samples have other benefits such as reducing the extent to which we overestimate the effect size. We will discuss this more in coming material.
 

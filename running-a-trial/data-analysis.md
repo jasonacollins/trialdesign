@@ -30,7 +30,7 @@ Before we start any analysis, we prepare (or "clean") the data to ensure we unde
 
 One illustration of the importance of examining the data visually and descriptively relates to Shu et al. (2012). They reported that "signing before—rather than after—the opportunity to cheat makes ethics salient when they are needed most and significantly reduces dishonesty." The paper contained the results of a field experiment whereby applicants for vehicle insurance reported higher mileage and incurred higher premiums when they signed at the top.
 
-Anonymous authors (2021) on *Data Colada* examined the data and wrote:
+@anonymous2021 on *Data Colada* examined the data and wrote:
 
 > Let's first think about what the distribution of miles driven should look like. If there were about a year separating the Time 1 and Time 2 mileages, we might expect something like the figure below, taken from the UK Department of Transportation (.pdf) based on similar data (two consecutive odometer readings) collected in 2010:
 
@@ -42,12 +42,5 @@ Anonymous authors (2021) on *Data Colada* examined the data and wrote:
 
 ![](img/F1-Uniform-change-2021-07-03-768x473.png)
 
-The data had been fraudulently generated. However, during the original analysis by Shu et al. (2012) and a review of the data by Kristal et al. (2020), nobody had picked this up as (likely) no one had done a simple plot.
+The data had been fraudulently generated. However, during the original analysis by @shu2012 and a review of the data by @kristal2020, nobody had picked this up as (likely) no one had done a simple plot.
 
-## References
-
-Anonymous (2021) "[98] Evidence of Fraud in an Influential Field Experiment About Dishonesty." *Data Colada*. August 17, 2021. http://datacolada.org/98
-
-Kristal et al. (2020) "Signing at the beginning versus at the end does not decrease dishonesty", PNAS, 117(13), 7103-7107, https://doi.org/10.1073/pnas.1911695117
-
-Shu et al. (2012) "Signing at the beginning makes ethics salient and decreases dishonest self-reports in comparison to signing at the end", *PNAS*, 109(38), https://doi.org/10.1073/pnas.1209746109

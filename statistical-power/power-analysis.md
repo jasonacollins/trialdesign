@@ -20,9 +20,9 @@ The power determination and effect size approaches represent two ways to conduct
 
 The two graphs below graphs, drawn with the G\*Power software, show how power and the minimum detectable effect size change with sample size. Both graphs assume a significance level of 0.05. The first graph uses the power determination approach and plots power against sample size for an effect size of 0.2. It shows that power increases with sample size. It also shows that we have more power for the same sample size when the effect size is larger. The second graph uses the effect size approach and plots the effect size against the sample size for 90% power. It shows that for a given level of power, we can detect a smaller effect size when the sample size is larger.
 
-![](img/G-Power-plot-1.png)
+![](img/G*Power-plot-1.png)
 
-![](img/G-Power-plot-2.png)
+![](img/G*Power-plot-2.png)
 
 ## Pre- and post-experiment power analysis
 

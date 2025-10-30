@@ -38,6 +38,3 @@ Zwane, A. P., Zinman, J., Van Dusen, E., Pariente, W., Null, C., Miguel, E., Kre
 What are the advantages and disadvantages of using survey data over administrative records?
 :::
 
-## Optional reading
-
-Zwane, A. P., Zinman, J., Van Dusen, E., Pariente, W., Null, C., Miguel, E., Kremer, M., Karlan, D. S., Hornbeck, R., Giné, X., Duflo, E., Devoto, F., Crepon, B., & Banerjee, A. (2011). [Being surveyed can change later behavior and related parameter estimates](https://doi-org.ezproxy.lib.uts.edu.au/10.1073/pnas.1000776108). *Proceedings of the National Academy of Sciences - PNAS*, *108*(5), 1821–1826.

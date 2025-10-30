@@ -2,7 +2,7 @@
 
 We set the rate of Type 1 errors through the significance level. A standard significance level of $\alpha=0.05$ gives a 5% false positive rate if the null hypothesis is true.
 
-There are many recent arguments that $\alpha$ should be smaller than 0.05, such as Benjamin et al's (2018) argument that $\alpha$ should be set at 0.005. Many of these relate to the replication crisis that we will cover this later in this course. We simply want to generate less false positives.
+There are many recent arguments that $\alpha$ should be smaller than 0.05, such as Benjamin et al's [-@benjamin2018] argument that $\alpha$ should be set at 0.005. Many of these relate to the replication crisis that we will cover this later in this course. We simply want to generate less false positives.
 
 ## Multiple comparisons
 

@@ -1,6 +1,6 @@
 # An example power analysis
 
-Below, I run a power analysis for Study 1 in Dietvorst, Simmons and Massey's (2015) paper on algorithm aversion. The experiment tested the hypothesis that "seeing the model perform, and therefore err, would decrease participants' tendency to bet on it rather than the human forecaster, despite the fact that the model was more accurate than the human."
+Below, I run a power analysis for Study 1 in Dietvorst, Simmons and Massey's [-@dietvorst2015] paper on algorithm aversion. The experiment tested the hypothesis that "seeing the model perform, and therefore err, would decrease participants' tendency to bet on it rather than the human forecaster, despite the fact that the model was more accurate than the human."
 
 Experimental participants were given a judgment task, with one group allowed to see the algorithm in action before undertaking the task. Participants were given the option of using the algorithm's predictions or their own. Those who had seen the algorithm perform were less likely to use it in the task.
 
@@ -47,7 +47,7 @@ In G\*Power, we select the type of test that was conducted (z-test, difference b
 
 The power of the test was over 99.9%.
 
-However, this effect size may not be representative. The other studies in Dietvorst et al (2015) had smaller effect sizes, as did the replication of Study 3b by Jung and Seiter (2021).
+However, this effect size may not be representative. The other studies in Dietvorst et al (2015) had smaller effect sizes, as did the replication of Study 3b by @jung2021.
 
 The effect size of Dietvorst et al (2015) Study 3a was 16%, with 57% in the control and 41% in the model group choosing the model. Assuming that is the true effect size in Study 1, we would have the following power.
 
@@ -138,8 +138,3 @@ pwrss.z.2props(p1 = 0.57, p2 = 0.41, kappa=1,
 
 Ninety per cent power would require a sample of 200.
 
-## References
-
-Dietvorst, Simmons and Massey (2015) "Algorithm aversion: People erroneously avoid algorithms after seeing them err", Journal of Experimental Psychology: General, 144, 114–126, https://doi.org/10.1037/xge0000033
-
-Jung and Seiter (2021) "Towards a better understanding on mitigating algorithm aversion in forecasting: An experimental study", *Journal of Management Control*, *32*(4), 495–516, https://doi.org/10.1007/s00187-021-00326-3

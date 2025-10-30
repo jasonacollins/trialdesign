@@ -4,8 +4,6 @@ The randomisation design and data collection plan describe how the study is mean
 
 In this section, I discuss four threats to the integrity of an experiment: partial compliance; attrition; spillovers; and evaluation-driven effects.
 
-::: {.panel-tabset}
-
 ## Partial compliance
 
 Partial compliance occurs when some people in the treatment group do not take up a program or others in the comparison group do.
@@ -37,7 +35,7 @@ To account for partial compliance in the analysis, we have to document complianc
 
 Partial compliance is also dealt with by measuring the "intention to treat" impact. This is an analysis based on the treatment assignment, not the assignment actually received.
 
-Consider a trial to test whether we can encourage customers to use their tax refund to pay their high-interest debts. Two messages are sent:
+Consider a trial to test whether we can encourage customers to use their tax refund to pay their high-interest debts [@johnson2020]. Two messages were sent:
 
 - A message mid-June to prompt customers to think about how they could make the most of their tax refunds, with paying down debt given as an option.
 - A post-tax refund message reminding them of the opportunity to pay down debts and taking them through the repayment experience if they choose to do so.
@@ -152,12 +150,4 @@ Evaluation-driven effects can bias impact estimates. Hawthorne effects and socia
 - Making sure the treatment and comparison groups get equivalent interaction with staff.
 - Measuring the evaluation-driven effects on a subset of the evaluation sample. Create random variation in evaluation procedures to measure the effects.
 
-:::
-
-## References
-
-Glennerster, R., & Takavarasha, K. (2013) "[Threats](https://doi-org.ezproxy.lib.uts.edu.au/10.2307/j.ctt4cgd52.11)" in *Running Randomized Evaluations: A Practical Guide* (pp. 298-323). Princeton University Press
-
-Glennerster, R., and Takavarasha, K. (2013) "[Analysis](https://doi-org.ezproxy.lib.uts.edu.au/10.2307/j.ctt4cgd52.12)" In *Running Randomized Evaluations: A Practical Guide* (pp. 324–385). Princeton University Press
-
-Johnson and Wang-Ly (2020) "Using Tax Refunds for Debt Repayment: A Study with Commonwealth Bank of Australia", *Financial Health Network.* https://finhealthnetwork.org/research/financial-health-solutions-using-tax-refunds-for-debt-repayment/
+For more information, see @glennerster2013d and @glennerster2013e.

@@ -36,9 +36,7 @@ A selection of processes in around the development of a trial include:
 
 **ideas42**
 
-ideas42's behavioural design process 
-
-They describe a five-stage process:
+ideas42's [behavioural design process](https://www.ideas42.org/wp-content/uploads/2018/04/BDT_Playbook_FINAL-digital.pdf) describes a five-stage process:
 
 - **Define** the problem and try to remove any embedded assumptions about why it may be occurring.
 - **Diagnose** what behavioral bottlenecks may be driving the problem.
@@ -48,11 +46,11 @@ They describe a five-stage process:
 
 **BETA 4D**
 
-BETA's 4D framework, a four stage process:
+[BETA's 4D framework](https://behaviouraleconomics.pmc.gov.au/learn-hub/be-skilled), a four stage process:
 
 - **Discover**: Define the policy, program or service delivery issue and develop a behavioural problem statement.
 - **Diagnose**: Understand the current behaviour and its drivers and develop a clearly defined hypothesis of behaviour change.
 - **Design**: Design an intervention to address the behavioural problem. Design an evaluation to test the intervention.
 - **Deliver**: Implement the intervention and evaluation and share the results.
 
-BETA has also published a guidance note on Developing behavioural interventions for randomised controlled trials: Nine guiding questions, which provides more detail on undertaking the first two stages of the 4D framework. 
+BETA has also published a guidance note on [Developing behavioural interventions for randomised controlled trials: Nine guiding questions](https://behaviouraleconomics.pmc.gov.au/sites/default/files/files/guide-to-developing-behavioural-interventions-for-randomised-controlled-trials.pdf), which provides more detail on undertaking the first two stages of the 4D framework. 

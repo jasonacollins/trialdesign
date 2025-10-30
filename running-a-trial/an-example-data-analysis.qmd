@@ -1,6 +1,6 @@
 # An example data analysis
 
-In this part, I will illustrate the data analysis process by reproducing the analysis in Study 1 of Dietvorst, Simmons and Massey's (2015) paper on algorithm aversion. The experiment tested the hypothesis that "seeing the model perform, and therefore err, would decrease participants' tendency to bet on it rather than the human forecaster, despite the fact that the model was more accurate than the human."
+In this part, I will illustrate the data analysis process by reproducing the analysis in Study 1 of Dietvorst, Simmons and Massey's [-@dietvorst2015] paper on algorithm aversion. The experiment tested the hypothesis that "seeing the model perform, and therefore err, would decrease participants' tendency to bet on it rather than the human forecaster, despite the fact that the model was more accurate than the human."
 
 Experimental participants were given a judgment task, with one group allowed to see the algorithm in action before undertaking the task. Participants were given the option of using the algorithm's predictions or their own. Those who had seen the algorithm perform were less likely to use it in the task.
 
@@ -46,13 +46,10 @@ In what follows I provide the R code that I used to reproduce the analysis. You 
 I start by downloading and unzipping the data file and loading the CSV for Study 1 into the R environment. I then made some amendments to the variable names to make them more readable (e.g. replacing the numbers for each condition with the words they represent: 1=control, etc.).
 
 ```{r}
-#| eval: false
 # Data downloaded from https://researchbox.org/379&PEER_REVIEW_passcode=MOQTEQ
-# Open Zip file from research box
-# unzip("ResearchBox_379.zip")
 
 #Load data from csv
-data <- read.csv("ResearchBox 379/Data/Study 1 Data.csv", header = TRUE, sep = ",", na.strings = ".")
+data <- read.csv("data/Study 1 Data.csv", header = TRUE, sep = ",", na.strings = ".")
 
 # Change to camel case
 colnames(data) <- paste(tolower(substring(colnames(data), 1, 1)), substring(colnames(data), 2), sep = "")
@@ -81,7 +78,6 @@ data$humanConfidence <- factor(data$humanConfidence, labels = confidence)
 I then run a quick check on the number of observations. I note from the paper that I should find 369 participants at the start, but 8 of these participants did not complete enough questions to get to the dependent variable. That leaves 361 participants across each of the conditions.
 
 ```{r}
-#| eval: false
 # Total participants
 length(data$ID)
 
@@ -95,8 +91,7 @@ As expected, I find 369 participants and 201+160=361 dependent variable observat
 I then broke down the dependent variable findings in more detail to see what each participant chose (human or model) in each condition.
 
 ```{r}
-#| eval: false
-#| warnings: false
+#| warning: false
 #| message: false
 
 # Choice of participants in each condition
@@ -112,8 +107,7 @@ Two chi-squared tests were then run to see if there was a significant difference
 The first was a test of whether there was a difference between the two conditions without and the two conditions with the model. This is a test of the core hypothesis.
 
 ```{r}
-#| eval: false
-#| warnings: false
+#| warning: false
 #| message: false
 
 # chisq.test between conditions 1 and 2 (control and human) and 3 and 4 (model and model&human)
@@ -125,8 +119,7 @@ chisq.test(table(data$modelBonus, data$model), correct=FALSE)
 The second was a test of whether there was a difference between the two conditions without and the two conditions with the human experience. This test was run to see whether the experience in seeing their own errors changed the participants' choices.
 
 ```{r}
-#| eval: false
-#| warnings: false
+#| warning: false
 #| message: false
 
 # chisq.test between conditions 1 and 3 (control and model) and 2 and 4 (human and model&human)
@@ -138,8 +131,7 @@ chisq.test(table(data$modelBonus, data$human), correct=FALSE)
 I then plotted that data in a bar chart to illustrate the results. This matches Figure 3 in the paper.
 
 ```{r}
-#| eval: false
-#| warnings: false
+#| warning: false
 #| message: false
 ## load ggplot2 for chart and tidyverse packages for data manipulation
 library(ggplot2)
@@ -172,8 +164,6 @@ ggplot(plot_data, aes(x=treatment, y=value)) +
 Finally, I replicate the analysis related to Study 1 as shown in Table 3.
 
 ```{r}
-#| eval: false
-
 # Calculate human and model mean rewards
 m<-round(mean(data$bonusFromModel, na.rm=TRUE), 2)
 h<-round(mean(data$bonusFromHuman, na.rm=TRUE), 2)
@@ -208,13 +198,11 @@ AAEh2<-round(mean(data$humanAAE2, na.rm=TRUE), 2)
 
 Table 3 results
 
-*Note: To see the actual results, download the data from the links provided above and run this code yourself with `eval: true`.*
-
-|               | Model | Human | Difference | t score | p value |
-|---------------|-------|-------|------------|---------|---------|
-| Bonus         | $2.50 | $2.22 | $0.28      | 8.57    | < 0.001 |
-| Stage 1 error | 12.00 | 13.81 | -1.81      | -3.64   | < 0.001 |
-| Stage 2 error | 11.76 | 13.19 | -1.43      | -5.65   | < 0.001 |
+|               | Model          | Human          | Difference | t score | p value |
+|---------------|----------------|----------------|------------|---------|---------|
+| Bonus         | $`r m`         | $`r h`         | $`r d`     | `r t`   | `r p`   |
+| Stage 1 error | `r AAEm`       | `r AAEh`       | `r d1`     | `r t1`  | `r p1`  |
+| Stage 2 error | `r AAEm2`      | `r AAEh2`      | `r d2`     | `r t2`  | `r p2`  |
 
 The numbers match those provided in the paper.
 
@@ -233,7 +221,6 @@ Where $Y_i$ is the number of participants that chose the model, $c$ is a constan
 Logistic regression is used here as we are considering the probability of an event taking place (choosing the model). If we were considering a continuous variable (e.g. amount saved due to an intervention), we would use linear regression, which is typically easier to interpret.
 
 ```{r}
-#| eval: false
 # Regression to determine whether there is a treatment effect
 reg <- glm(modelBonus ~ model, data=data, family=binomial)
 
@@ -252,6 +239,3 @@ Including covariates in the regression can give us a more precise estimate of th
 
 Often, the best covariate to include is a baseline measure of the outcome variable. With stratified randomisation, it is often recommended to add an indicator for each different stratum.
 
-## References
-
-Dietvorst, Simmons and Massey (2015) "Algorithm aversion: People erroneously avoid algorithms after seeing them err", Journal of Experimental Psychology: General, 144, 114–126, https://doi.org/10.1037/xge0000033

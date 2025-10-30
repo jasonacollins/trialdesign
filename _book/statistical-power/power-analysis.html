@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>41&nbsp; Power analysis – Course notes on trial design</title>
+<title>30&nbsp; Power analysis – Course notes on trial design</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,13 +77,17 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
-<meta property="og:title" content="41&nbsp; Power analysis – Course notes on trial design">
+<meta property="og:title" content="30&nbsp; Power analysis – Course notes on trial design">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://trialdesign.jasoncollins.blog/statistical-power/img/G-Power-plot-1.png">
+<meta property="og:image" content="https://trialdesign.jasoncollins.blog/statistical-power/img/G*Power-plot-1.png">
 <meta property="og:site_name" content="Course notes on trial design">
-<meta name="twitter:title" content="41&nbsp; Power analysis – Course notes on trial design">
+<meta property="og:image:height" content="314">
+<meta property="og:image:width" content="762">
+<meta name="twitter:title" content="30&nbsp; Power analysis – Course notes on trial design">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://trialdesign.jasoncollins.blog/statistical-power/img/G-Power-plot-1.png">
+<meta name="twitter:image" content="https://trialdesign.jasoncollins.blog/statistical-power/img/G*Power-plot-1.png">
+<meta name="twitter:image-height" content="314">
+<meta name="twitter:image-width" content="762">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -126,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/power-analysis.html"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/power-analysis.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -236,44 +240,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/partial-compliance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Partial compliance</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/attrition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Attrition</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/spillovers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Spillovers</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/evaluation-driven-effects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Evaluation-driven effects</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../before-the-trial/develop-the-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/program-theory.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/design-and-select-an-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
   </div>
 </li>
       </ul>
@@ -290,115 +270,73 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/steps-in-a-randomised-trial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/define-the-outcome-measure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-outcome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Level of outcome</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/random-sample-versus-random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Random sample versus random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/what-can-be-randomised.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">What can be randomised?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/opportunities-to-randomise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Opportunities to randomise</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-randomisation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Level of randomisation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/three-research-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Three research designs</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/randomisation-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Randomisation techniques</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-collection-plan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/pilot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/trial-implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/an-example-data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/threats-to-the-integrity-of-the-experiment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/alternative-trial-design-processes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/scaling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/ethical-principles-for-trial-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
   </div>
 </li>
       </ul>
@@ -415,37 +353,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-and-type-ii-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-error-control.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/statistical-power-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/power-analysis.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/an-example-power-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
   </div>
 </li>
       </ul>
@@ -462,73 +400,67 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/navigating-the-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interpreting-trial-results/reading-research.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Reading research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/the-replication-crisis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/replication-and-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/publication-bias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/p-hacking-and-the-garden-of-forking-paths.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/pre-analysis-plans-and-preregistration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/type-m-and-type-s-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/validity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-context.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/heterogeneity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
   </div>
 </li>
       </ul>
@@ -549,19 +481,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#power-determination-approach" id="toc-power-determination-approach" class="nav-link active" data-scroll-target="#power-determination-approach"><span class="header-section-number">41.1</span> Power determination approach</a></li>
-  <li><a href="#effect-size-approach" id="toc-effect-size-approach" class="nav-link" data-scroll-target="#effect-size-approach"><span class="header-section-number">41.2</span> Effect size approach</a></li>
-  <li><a href="#pre--and-post-experiment-power-analysis" id="toc-pre--and-post-experiment-power-analysis" class="nav-link" data-scroll-target="#pre--and-post-experiment-power-analysis"><span class="header-section-number">41.3</span> Pre- and post-experiment power analysis</a></li>
-  <li><a href="#optional-reading" id="toc-optional-reading" class="nav-link" data-scroll-target="#optional-reading"><span class="header-section-number">41.4</span> Optional reading</a></li>
+  <li><a href="#power-determination-approach" id="toc-power-determination-approach" class="nav-link active" data-scroll-target="#power-determination-approach"><span class="header-section-number">30.1</span> Power determination approach</a></li>
+  <li><a href="#effect-size-approach" id="toc-effect-size-approach" class="nav-link" data-scroll-target="#effect-size-approach"><span class="header-section-number">30.2</span> Effect size approach</a></li>
+  <li><a href="#pre--and-post-experiment-power-analysis" id="toc-pre--and-post-experiment-power-analysis" class="nav-link" data-scroll-target="#pre--and-post-experiment-power-analysis"><span class="header-section-number">30.3</span> Pre- and post-experiment power analysis</a></li>
+  <li><a href="#optional-reading" id="toc-optional-reading" class="nav-link" data-scroll-target="#optional-reading"><span class="header-section-number">30.4</span> Optional reading</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jasonacollins/trialdesign/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/power-analysis.html"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../statistical-power/statistical-power.html">Statistical power, error control, and effect sizes</a></li><li class="breadcrumb-item"><a href="../statistical-power/power-analysis.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></h1>
+<h1 class="title"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></h1>
 </div>
 
 
@@ -580,29 +512,29 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Once you have all the ingredients for a power calculation, how do you actually conduct it? Many statistical packages have sample size function. Free tools are also available, such as <a href="https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower">G*Power</a>.</p>
 <p>There are two common approaches for conducting power analysis.</p>
-<section id="power-determination-approach" class="level2" data-number="41.1">
-<h2 data-number="41.1" class="anchored" data-anchor-id="power-determination-approach"><span class="header-section-number">41.1</span> Power determination approach</h2>
+<section id="power-determination-approach" class="level2" data-number="30.1">
+<h2 data-number="30.1" class="anchored" data-anchor-id="power-determination-approach"><span class="header-section-number">30.1</span> Power determination approach</h2>
 <p>The first approach begins with an assumption about the effect size the intervention produces, and the aim is to compute the power they will have to detect that effect with given sample size.</p>
 <p>For example, suppose that a team of researchers is planning a study to detect the effect of a school-level intervention aimed at improving math achievement for third graders. They plan to randomise schools to receive either the treatment or continue with the current protocol. Pilot studies and available theory suggest that a practically significant effect would entail a standardized effect size of 0.20; that is, a mean difference equivalent to 0.20 in units of the population standard deviation of the outcome (more about this on a following page). Thus the researchers want to plan the study to be able to detect an effect of at least 0.20 standard deviation units. In this case, the effect size is already determined, and the researchers are interested in calculating the sample size necessary to achieve the power of 0.80. Of course, this process can be repeated for a range of effect sizes.</p>
 </section>
-<section id="effect-size-approach" class="level2" data-number="41.2">
-<h2 data-number="41.2" class="anchored" data-anchor-id="effect-size-approach"><span class="header-section-number">41.2</span> Effect size approach</h2>
+<section id="effect-size-approach" class="level2" data-number="30.2">
+<h2 data-number="30.2" class="anchored" data-anchor-id="effect-size-approach"><span class="header-section-number">30.2</span> Effect size approach</h2>
 <p>The second approach begins with a desired level of power and the aim is to compute the minimum effect size that can be detected at that level of power for any given sample size. This approach can, of course, be replicated at any given level of power. The minimum detectable effect size is the smallest true effect that can be detected for a specified level of power and significance level for any given sample size.</p>
 <p>For example, suppose that another team of researchers is studying a whole-school reform model. They plan to randomise schools to either the new reform model or current conditions. Because of financial considerations, the team can only recruit 50 schools and 100 students within each school. The sample size is set, thus the researchers are trying to determine the smallest effect size they can detect with the pre-specified sample size.</p>
 <p>The power determination and effect size approaches represent two ways to conduct a power analysis. However, both approaches yield the same conclusions. That is, a power analysis could be conducted using either approach, and ultimately the same conclusions would be reached.</p>
 <p>The two graphs below graphs, drawn with the G*Power software, show how power and the minimum detectable effect size change with sample size. Both graphs assume a significance level of 0.05. The first graph uses the power determination approach and plots power against sample size for an effect size of 0.2. It shows that power increases with sample size. It also shows that we have more power for the same sample size when the effect size is larger. The second graph uses the effect size approach and plots the effect size against the sample size for 90% power. It shows that for a given level of power, we can detect a smaller effect size when the sample size is larger.</p>
-<p><a href="img/G-Power-plot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/G-Power-plot-1.png" class="img-fluid"></a></p>
-<p><a href="img/G-Power-plot-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/G-Power-plot-2.png" class="img-fluid"></a></p>
+<p><a href="img/G*Power-plot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/G*Power-plot-1.png" class="img-fluid"></a></p>
+<p><a href="img/G*Power-plot-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="img/G*Power-plot-2.png" class="img-fluid"></a></p>
 </section>
-<section id="pre--and-post-experiment-power-analysis" class="level2" data-number="41.3">
-<h2 data-number="41.3" class="anchored" data-anchor-id="pre--and-post-experiment-power-analysis"><span class="header-section-number">41.3</span> Pre- and post-experiment power analysis</h2>
+<section id="pre--and-post-experiment-power-analysis" class="level2" data-number="30.3">
+<h2 data-number="30.3" class="anchored" data-anchor-id="pre--and-post-experiment-power-analysis"><span class="header-section-number">30.3</span> Pre- and post-experiment power analysis</h2>
 <p>Power calculations should be done <strong>before</strong> an experiment. It is used to determine what sample size is required to obtain the requisite power. A common practice is obtaining a sample size sufficient to achieve 80% power, although there is little reason to limit yourself to that level of power if you can increase power at a modest cost.</p>
 <p>Power calculations are also often done after an experiment. You will see in the literature that post-experiment power calculations are regularly used to justify that the experiment had sufficient power, with the effect size found in the experiment as the basis for the power calculation. This is poor practice, as a significant result in an underpowered experiment will tend to exaggerate the effect size. If you then use this exaggerated effect to calculate power, it gives the impression that the experiment was adequately powered. We will discuss this exaggeration of effect size later in the unit.</p>
 <p>If a power calculation is done after the experiment, it should only be done using a well-grounded assumed effect size, not the effect size observed in the experiment.</p>
 <p>An alternative use of post-experiment power calculations is to examine whether published experiments should show the proportion of significant results that they do. If a set of experiments has an average power of 80%, only 80% should find a statistically significant effect. A higher proportion suggests publication bias (a topic later in the unit).</p>
 </section>
-<section id="optional-reading" class="level2" data-number="41.4">
-<h2 data-number="41.4" class="anchored" data-anchor-id="optional-reading"><span class="header-section-number">41.4</span> Optional reading</h2>
+<section id="optional-reading" class="level2" data-number="30.4">
+<h2 data-number="30.4" class="anchored" data-anchor-id="optional-reading"><span class="header-section-number">30.4</span> Optional reading</h2>
 <p>Glennerster, R., &amp; Takavarasha, K. (2013). <a href="https://doi-org.ezproxy.lib.uts.edu.au/10.2307/j.ctt4cgd52.10">Statistical Power</a>. <em>Running Randomized Evaluations: A Practical Guide</em> (pp.&nbsp;241–297). Princeton University Press.</p>
 
 
@@ -1223,12 +1155,12 @@ window.onload = function() {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../statistical-power/statistical-power-content.html" class="pagination-link" aria-label="Statistical power">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../statistical-power/an-example-power-analysis.html" class="pagination-link" aria-label="An example power analysis">
-        <span class="nav-page-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An example power analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">An example power analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -107,13 +107,14 @@ Beyond outcomes, you might also want to measure process pieces. For example, if 
 
 Due to practical requirements, measurement may simply involve analysis of the data you already collect. Many measures of interest are already collected, and if your experiment can capitalise on that, it may improve feasibility and reduce cost. However, this may also create an arbitrary break to the extent of the outcomes that you want to examine.
 
-### Example: reducing power consumption
+::: {.callout-note}
+## Example: Reducing power consumption
 
 Power companies often want to limit their customers' electricity demand. This might be for environmental reasons or to reduce peak demand.
 
 One method to achieve this is to give that person or household a comparison of their power consumption with that of their neighbours. People have a desire to conform, and look to cues to inform their decisions. If shown that their power usage is above their neighbours, they tend to reduce their use.
 
-![](img/power.jpg)
+![Reducing power consumption example](img/power.jpg)
 
 That is one possible outcome: reduced electricity usage. A related direct outcome is the financial saving through reduced power usage. Do they pay a smaller power bill?
 
@@ -127,6 +128,7 @@ Even those questions might be seen as narrow. If the individual or household's o
 
 Measuring many of those outcomes are difficult. But that does not mean that they don't matter.
 
-@allcott2019 sought a broader measure of the benefits of the comparisons by asking customers their "willingness to pay" for the home energy reports that contained comparisons of their energy use. This willingness to pay measure supported the argument that there was a net welfare gain from the the comparison. However, because the willingness to pay measures capture the broader costs and benefits of the energy reports beyond simple changes in energy usage, they found that the welfare gains were much smaller than assessed using narrow measures.
+allcott2019 sought a broader measure of the benefits of the comparisons by asking customers their "willingness to pay" for the home energy reports that contained comparisons of their energy use. This willingness to pay measure supported the argument that there was a net welfare gain from the the comparison. However, because the willingness to pay measures capture the broader costs and benefits of the energy reports beyond simple changes in energy usage, they found that the welfare gains were much smaller than assessed using narrow measures.
 
 Perhaps most interestingly, one third of the recipients would be willing to pay to not receive the report. For those customers, the psychological or other costs outweighed any information benefit.
+:::

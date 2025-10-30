@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>17&nbsp; Program theory – Course notes on trial design</title>
+<title>13&nbsp; Program theory – Course notes on trial design</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -77,15 +97,19 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
-<meta property="og:title" content="17&nbsp; Program theory – Course notes on trial design">
+<meta property="og:title" content="13&nbsp; Program theory – Course notes on trial design">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://trialdesign.jasoncollins.blog/before-the-trial/img/apple-black-box.png">
+<meta property="og:image" content="https://trialdesign.jasoncollins.blog/before-the-trial/img/funnell-and-rogers-2011-figure-1-1.png">
 <meta property="og:site_name" content="Course notes on trial design">
 <meta property="og:image:alt" content="Black box evaluation showing program leading to outcomes">
-<meta name="twitter:title" content="17&nbsp; Program theory – Course notes on trial design">
+<meta property="og:image:height" content="126">
+<meta property="og:image:width" content="398">
+<meta name="twitter:title" content="13&nbsp; Program theory – Course notes on trial design">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://trialdesign.jasoncollins.blog/before-the-trial/img/apple-black-box.png">
+<meta name="twitter:image" content="https://trialdesign.jasoncollins.blog/before-the-trial/img/funnell-and-rogers-2011-figure-1-1.png">
 <meta name="twitter:image:alt" content="Black box evaluation showing program leading to outcomes">
+<meta name="twitter:image-height" content="126">
+<meta name="twitter:image-width" content="398">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -128,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../before-the-trial/before-the-trial.html">Before the trial</a></li><li class="breadcrumb-item"><a href="../before-the-trial/program-theory.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../before-the-trial/before-the-trial.html">Before the trial</a></li><li class="breadcrumb-item"><a href="../before-the-trial/program-theory.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Program theory</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -238,44 +262,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/partial-compliance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Partial compliance</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/attrition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Attrition</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/spillovers.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Spillovers</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../before-the-trial/evaluation-driven-effects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Evaluation-driven effects</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../before-the-trial/develop-the-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/program-theory.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Program theory</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../before-the-trial/design-and-select-an-intervention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span></a>
   </div>
 </li>
       </ul>
@@ -292,115 +292,73 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/steps-in-a-randomised-trial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Steps in a randomised trial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/define-the-outcome-measure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-outcome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Level of outcome</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Define the outcome measure</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/random-sample-versus-random-assignment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Random sample versus random assignment</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/what-can-be-randomised.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">What can be randomised?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/opportunities-to-randomise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Opportunities to randomise</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/level-of-randomisation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Level of randomisation</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/three-research-designs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Three research designs</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../running-a-trial/randomisation-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Randomisation techniques</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Random assignment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-collection-plan.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Data collection plan</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/pilot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Pilot</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/trial-implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Trial implementation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/an-example-data-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">An example data analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/threats-to-the-integrity-of-the-experiment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Threats to the integrity of the experiment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/alternative-trial-design-processes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Alternative trial design processes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/scaling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Scaling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../running-a-trial/ethical-principles-for-trial-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Ethical principles for trial design</span></span></a>
   </div>
 </li>
       </ul>
@@ -417,37 +375,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-and-type-ii-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Type I and Type II errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/type-i-error-control.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Type I error control</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/statistical-power-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Statistical power</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/power-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/an-example-power-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">An example power analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../statistical-power/effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Effect sizes</span></span></a>
   </div>
 </li>
       </ul>
@@ -464,73 +422,67 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/navigating-the-literature.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../interpreting-trial-results/reading-research.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Reading research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Navigating the literature</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/the-replication-crisis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">The replication crisis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/replication-and-reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Replication and reproducibility</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/publication-bias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Publication bias</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/p-hacking-and-the-garden-of-forking-paths.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">P-hacking and the garden of forking paths</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/pre-analysis-plans-and-preregistration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Pre-analysis plans and pre-registration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/type-m-and-type-s-errors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Type S and M errors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/validity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Validity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-effect-sizes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Generalisability: effect sizes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/generalisability-context.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Generalisability: context</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../interpreting-trial-results/heterogeneity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Heterogeneity</span></span></a>
   </div>
 </li>
       </ul>
@@ -551,22 +503,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#an-apple-a-day-keeps-the-doctor-away-or-does-it" id="toc-an-apple-a-day-keeps-the-doctor-away-or-does-it" class="nav-link active" data-scroll-target="#an-apple-a-day-keeps-the-doctor-away-or-does-it"><span class="header-section-number">17.1</span> An apple a day keeps the doctor away — or does it?</a>
+  <li><a href="#an-apple-a-day-keeps-the-doctor-away-or-does-it" id="toc-an-apple-a-day-keeps-the-doctor-away-or-does-it" class="nav-link active" data-scroll-target="#an-apple-a-day-keeps-the-doctor-away-or-does-it"><span class="header-section-number">13.1</span> An apple a day keeps the doctor away — or does it?</a>
   <ul class="collapse">
-  <li><a href="#an-evaluation-without-program-theory" id="toc-an-evaluation-without-program-theory" class="nav-link" data-scroll-target="#an-evaluation-without-program-theory"><span class="header-section-number">17.1.1</span> An evaluation without program theory</a></li>
-  <li><a href="#logic-models-showing-different-possible-causal-mechanisms" id="toc-logic-models-showing-different-possible-causal-mechanisms" class="nav-link" data-scroll-target="#logic-models-showing-different-possible-causal-mechanisms"><span class="header-section-number">17.1.2</span> Logic models showing different possible causal mechanisms</a></li>
-  <li><a href="#using-program-theory-to-interpret-evaluation-findings" id="toc-using-program-theory-to-interpret-evaluation-findings" class="nav-link" data-scroll-target="#using-program-theory-to-interpret-evaluation-findings"><span class="header-section-number">17.1.3</span> Using program theory to interpret evaluation findings</a></li>
+  <li><a href="#an-evaluation-without-program-theory" id="toc-an-evaluation-without-program-theory" class="nav-link" data-scroll-target="#an-evaluation-without-program-theory"><span class="header-section-number">13.1.1</span> An evaluation without program theory</a></li>
+  <li><a href="#logic-models-showing-different-possible-causal-mechanisms" id="toc-logic-models-showing-different-possible-causal-mechanisms" class="nav-link" data-scroll-target="#logic-models-showing-different-possible-causal-mechanisms"><span class="header-section-number">13.1.2</span> Logic models showing different possible causal mechanisms</a></li>
+  <li><a href="#using-program-theory-to-interpret-evaluation-findings" id="toc-using-program-theory-to-interpret-evaluation-findings" class="nav-link" data-scroll-target="#using-program-theory-to-interpret-evaluation-findings"><span class="header-section-number">13.1.3</span> Using program theory to interpret evaluation findings</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">17.2</span> References</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/jasonacollins/trialdesign/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../before-the-trial/before-the-trial.html">Before the trial</a></li><li class="breadcrumb-item"><a href="../before-the-trial/program-theory.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../before-the-trial/before-the-trial.html">Before the trial</a></li><li class="breadcrumb-item"><a href="../before-the-trial/program-theory.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Program theory</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Program theory</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Program theory</span></h1>
 </div>
 
 
@@ -583,35 +534,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A program theory refers to a variety of ways of developing a causal modal linking program inputs and activities to a chain of intended or observed outcomes, and then using this model to guide the evaluation (Rogers et al., 2000). It articulates how an intervention is expected to contribute to a chain of results that produce the intended or actual impacts. It can include positive impacts (which are beneficial) and negative impacts (which are detrimental). It can also show the other factors which contribute to producing impacts, such as context and other projects.</p>
+<p>A program theory refers to a variety of ways of developing a causal modal linking program inputs and activities to a chain of intended or observed outcomes, and then using this model to guide the evaluation <span class="citation" data-cites="rogers2000">(<a href="../references.html#ref-rogers2000" role="doc-biblioref">Rogers et al., 2000</a>)</span>. It articulates how an intervention is expected to contribute to a chain of results that produce the intended or actual impacts. It can include positive impacts (which are beneficial) and negative impacts (which are detrimental). It can also show the other factors which contribute to producing impacts, such as context and other projects.</p>
 <p>Speculating on different possible causal mechanisms through a program theory is useful to provide a conceptual framework to understand to what extent, for whom, and why an intervention does or does not work. It is also helpful to determine which outcomes we should measure. If the program is not successful, having indicators for these intermediate steps helps us understand at which step in the chain the program failed. Although a single evaluation is limited in its scope, program theory makes it easier to combine evidence from a number of studies.</p>
 <p>Different types of diagrams can be used to represent a program theory. These are often referred to as logic models, as they show the overall logic of how the intervention is understood to work.</p>
-<section id="an-apple-a-day-keeps-the-doctor-away-or-does-it" class="level2" data-number="17.1">
-<h2 data-number="17.1" class="anchored" data-anchor-id="an-apple-a-day-keeps-the-doctor-away-or-does-it"><span class="header-section-number">17.1</span> An apple a day keeps the doctor away — or does it?</h2>
-<p>Let’s look at the program example and discussion from Funnell and Rogers (2011). Suppose we have implemented a program, called An Apple A Day, which involves distributing seven apples a week to each participant with the broad objective of improving health.</p>
-<section id="an-evaluation-without-program-theory" class="level3" data-number="17.1.1">
-<h3 data-number="17.1.1" class="anchored" data-anchor-id="an-evaluation-without-program-theory"><span class="header-section-number">17.1.1</span> An evaluation without program theory</h3>
+<section id="an-apple-a-day-keeps-the-doctor-away-or-does-it" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="an-apple-a-day-keeps-the-doctor-away-or-does-it"><span class="header-section-number">13.1</span> An apple a day keeps the doctor away — or does it?</h2>
+<p>Let’s look at the program example and discussion from <span class="citation" data-cites="funnell2011">Funnell and Rogers (<a href="../references.html#ref-funnell2011" role="doc-biblioref">2011</a>)</span>. Suppose we have implemented a program, called An Apple A Day, which involves distributing seven apples a week to each participant with the broad objective of improving health.</p>
+<section id="an-evaluation-without-program-theory" class="level3" data-number="13.1.1">
+<h3 data-number="13.1.1" class="anchored" data-anchor-id="an-evaluation-without-program-theory"><span class="header-section-number">13.1.1</span> An evaluation without program theory</h3>
 <p>A representation of this program without program theory would simply show the program followed by the intended outcome as shown in the figure below. This figure only shows what goes in and what comes out without information about how things are processed in between. This is just a black box evaluation.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Black box evaluation showing program leading to outcomes</figcaption>
-<p><a href="img/apple-black-box.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Black box evaluation showing program leading to outcomes"><img src="img/apple-black-box.png" class="img-fluid figure-img" alt="Black box evaluation showing program leading to outcomes"></a></p>
+<p><a href="img/funnell-and-rogers-2011-figure-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Black box evaluation showing program leading to outcomes"><img src="img/funnell-and-rogers-2011-figure-1-1.png" class="img-fluid figure-img" alt="Black box evaluation showing program leading to outcomes"></a></p>
 </figure>
 </div>
 </section>
-<section id="logic-models-showing-different-possible-causal-mechanisms" class="level3" data-number="17.1.2">
-<h3 data-number="17.1.2" class="anchored" data-anchor-id="logic-models-showing-different-possible-causal-mechanisms"><span class="header-section-number">17.1.2</span> Logic models showing different possible causal mechanisms</h3>
+<section id="logic-models-showing-different-possible-causal-mechanisms" class="level3" data-number="13.1.2">
+<h3 data-number="13.1.2" class="anchored" data-anchor-id="logic-models-showing-different-possible-causal-mechanisms"><span class="header-section-number">13.1.2</span> Logic models showing different possible causal mechanisms</h3>
 <p>The following figure shows a program theory for An Apple A Day. It displays four different mechanisms that might plausibly explain why the policy works.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Four different possible causal mechanisms for An Apple A Day</figcaption>
-<p><a href="img/apple-four-mechanisms.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Four different possible causal mechanisms for An Apple A Day"><img src="img/apple-four-mechanisms.png" class="img-fluid figure-img" alt="Four different possible causal mechanisms for An Apple A Day"></a></p>
+<p><a href="img/funnell-and-rogers-2011-figure-1-4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Four different possible causal mechanisms for An Apple A Day"><img src="img/funnell-and-rogers-2011-figure-1-4.png" class="img-fluid figure-img" alt="Four different possible causal mechanisms for An Apple A Day"></a></p>
 </figure>
 </div>
 <p>The table below summarises how an evaluation informed by program theory can distinguish among different types of success and failure. It focuses on the second mechanisms (improved level of Vitamin C) and can be done only if we have collected Vitamin C levels.</p>
 </section>
-<section id="using-program-theory-to-interpret-evaluation-findings" class="level3" data-number="17.1.3">
-<h3 data-number="17.1.3" class="anchored" data-anchor-id="using-program-theory-to-interpret-evaluation-findings"><span class="header-section-number">17.1.3</span> Using program theory to interpret evaluation findings</h3>
+<section id="using-program-theory-to-interpret-evaluation-findings" class="level3" data-number="13.1.3">
+<h3 data-number="13.1.3" class="anchored" data-anchor-id="using-program-theory-to-interpret-evaluation-findings"><span class="header-section-number">13.1.3</span> Using program theory to interpret evaluation findings</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 12%">
@@ -681,7 +632,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p><em>Diagrams and table adapted from: Funnell, S. C., &amp; Rogers, P. J. (2011). <a href="https://www.researchgate.net/publication/259999058_Purposeful_Program_Theory_Effective_Use_of_Theories_of_Change_and_Logic_Models">The essence of program theory</a>. Purposeful program theory: effective use of theories of change and logic models (1st ed., pp.&nbsp;3–13). Jossey-Bass.</em></p>
+<p><em>Diagrams and table adapted from <span class="citation" data-cites="funnell2011">Funnell and Rogers (<a href="../references.html#ref-funnell2011" role="doc-biblioref">2011</a>)</span></em></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -695,15 +646,21 @@ ul.task-list li input[type="checkbox"] {
 <p>Can you think about other mechanisms through which providing an apple a day to people will improve their health to augment the program theory?</p>
 </div>
 </div>
-</section>
-</section>
-<section id="references" class="level2" data-number="17.2">
-<h2 data-number="17.2" class="anchored" data-anchor-id="references"><span class="header-section-number">17.2</span> References</h2>
-<p>Glennerster, R., &amp; Takavarasha, K. (2013). <a href="https://doi-org.ezproxy.lib.uts.edu.au/10.2307/j.ctt4cgd52.9">Outcomes and Instruments</a>. <em>Running Randomized Evaluations: A Practical Guide</em> (pp.&nbsp;180–240). Princeton University Press.</p>
-<p>Rogers, P. J., Petrosino, A., Huebner, T. A., &amp; Hacsi, T. A. (2000). <a href="https://doi-org.ezproxy.lib.uts.edu.au/10.1002/ev.1177">Program theory evaluation: Practice, promise, and problems</a>. <em>New Directions for Evaluation</em>, <em>2000</em>(87), 5–13.</p>
-<p>Funnell, S. C., &amp; Rogers, P. J. (2011). <a href="https://www.researchgate.net/publication/259999058_Purposeful_Program_Theory_Effective_Use_of_Theories_of_Change_and_Logic_Models">The essence of program theory</a>. <em>Purposeful program theory: effective use of theories of change and logic models</em> (1st ed., pp.&nbsp;3–13). Jossey-Bass.</p>
+<p>For more information, see <span class="citation" data-cites="glennerster2013a">Glennerster and Takavarasha (<a href="../references.html#ref-glennerster2013a" role="doc-biblioref">2013</a>)</span>.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-funnell2011" class="csl-entry" role="listitem">
+Funnell, S. C., and Rogers, P. J. (2011). <em>The essence of program theory</em>. Jossey-Bass. <a href="https://www.wiley.com/en-au/Purposeful+Program+Theory%3A+Effective+Use+of+Theories+of+Change+and+Logic+Models-p-9780470478578">https://www.wiley.com/en-au/Purposeful+Program+Theory%3A+Effective+Use+of+Theories+of+Change+and+Logic+Models-p-9780470478578</a>
+</div>
+<div id="ref-glennerster2013a" class="csl-entry" role="listitem">
+Glennerster, R., and Takavarasha, K. (2013). Outcomes and instruments. In <em>Running randomized evaluations: A practical guide</em> (pp. 180–240). Princeton University Press. <a href="https://www.jstor.org/stable/j.ctt4cgd52.9">https://www.jstor.org/stable/j.ctt4cgd52.9</a>
+</div>
+<div id="ref-rogers2000" class="csl-entry" role="listitem">
+Rogers, P. J., Petrosino, A., Huebner, T. A., and Hacsi, T. A. (2000). Program theory evaluation: Practice, promise, and problems. <em>New Directions for Evaluation</em>, <em>2000</em>(87), 5–13. <a href="https://doi.org/10.1002/ev.1177">https://doi.org/10.1002/ev.1177</a>
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1321,12 +1278,12 @@ window.onload = function() {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../before-the-trial/develop-the-intervention.html" class="pagination-link" aria-label="Developing the intervention">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Developing the intervention</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../before-the-trial/design-and-select-an-intervention.html" class="pagination-link" aria-label="Design and select an intervention">
-        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Design and select an intervention</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
