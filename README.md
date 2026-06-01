@@ -83,7 +83,7 @@ Each module contains multiple chapters stored as `.md` or `.qmd` files, with ima
 
 ## Publishing
 
-- **Site URL**: https://trialdesign.jasoncollins.blog
+- **Site URL**: https://td.jcx.au
 - **Repository**: https://github.com/jasonacollins/trialdesign
 - **License**: CC-BY (Creative Commons Attribution)
 - **Author**: Jason Collins

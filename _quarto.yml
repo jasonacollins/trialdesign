@@ -3,7 +3,7 @@ project:
 
 book:
   title: "Course notes on trial design"
-  site-url: https://trialdesign.jasoncollins.blog
+  site-url: https://td.jcx.au
   author: "Jason Collins"
   date: "30 October 2025"
   date-format: D MMMM YYYY
@@ -68,9 +68,9 @@ book:
     search: true
     right:
       - text: "Blog"
-        href: https://www.jasoncollins.blog/
+        href: https://blog.jcx.au/
       - text: "About"
-        href: https://www.jasoncollins.blog/about/
+        href: https://www.jcx.au/
   sidebar:
     collapse-level: 1
     style: "floating"
