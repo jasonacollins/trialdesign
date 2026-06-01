@@ -97,7 +97,7 @@ format:
       - include/webex.css
     html-math-method: katex
     link-external-newwindow: true
-    ink-external-filter: ^(?:http:|https:)\/\/trialdesign\.jasoncollins\.blog\/custom
+    ink-external-filter: ^(?:http:|https:)\/\/blog\.jcx\.au\/custom
     code-fold: true
     fig-cap-location: top
     toc-expand: 1
